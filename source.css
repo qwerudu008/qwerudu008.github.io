@@ -10,11 +10,12 @@ $$ |  $$ |$$ |      $$ |  $$ |$$ |  $$ |$$ |  $$ |$$ |      $$\   $$ |
 */
 :root {
   /*Global variables that were made/edited by me*/
-  --Main-Color: rgb(250, 0, 158); /*main master color*/
-  --Secondary-Color: rgb(190, 0, 158); /*secondary color*/
-  --Third-Color: rgb(110,0,158); /*third color*/
-  --Color-4: rgb(90,0,158); /*color number 4*/
-  --Color-5: hsla(320, 40%, 40%, 0.366); /*color number 5*/
+  --Main-Color: rgb(129, 129, 129); /*main master color*/
+  --Secondary-Color: rgb(153, 153, 153); /*secondary color*/
+  --Third-Color: rgb(99, 99, 99); /*third color*/
+  --Color-4: rgb(80, 80, 80); /*color number 4*/
+  --Color-5: hsla(0, 0%, 56%, 0.366); /*color number 5*/
+  --Color-6: hsla(0, 0%, 76%, 0.466); /*color number 6*/
   --Grey-Color: rgb(31, 31, 31); /*grey color*/
   --Black: rgb(0,0,0); /*black color*/
   --White: rgb(255,255,255); /*white color*/
@@ -24,42 +25,38 @@ $$ |  $$ |$$ |      $$ |  $$ |$$ |  $$ |$$ |  $$ |$$ |      $$\   $$ |
   --Neon-Line2: 255,0,0; /*red neon line*/
   --Neon-Rgb: var(--Neon-Line); /*neon node #1*/
   --Neon-Rgb2: var(--Neon-Line2); /*red noen node #2*/
-  --Cards-Background-Color: rgb(63, 0, 64);/*darker cards color*/
+  --Cards-Background-Color: rgb(48, 48, 48);/*darker cards color*/
   /*Backgrounds*/
   --master-background: url('https://github.com/xy-nyxy/AnotherEternity/blob/main/background/Master%20Background.png?raw=true'); /*master background*/
   --background-floating: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.2)) , var(--master-background)50% 50%/cover !important; /*background used in normal discord's code*/
-  --background-black-and-white1: url('https://inspirationfeed.com/wp-content/uploads/2018/12/lou-batier-365323-unsplash-768x512.jpg'); /*background 3*/
-  --background-black-and-white2: url('https://inspirationfeed.com/wp-content/uploads/2018/12/martin-sattler-160751-unsplash-768x575.jpg'); /*background 4*/
   /*Gifs for popouts and stuff*/
-  --loop-gif: url('https://c.tenor.com/2oQwi7vJz9wAAAAC/loop-space.gif');                                                                                       /*Used in files background*/
-  --loop-gif2: url('https://64.media.tumblr.com/16314eedf67c43cc5cb711ffe8c0b08e/22caaa59656e483e-b3/s640x960/7f706f80fb11b3390532fea23ffca444a6f3ea32.gifv');  /*Used in guild popouts > User popout*/
-  --loop-gif3: url('https://i.pinimg.com/originals/d5/a7/cb/d5a7cb46e2f15a8fed10aaf1dd00965c.gif');                                                             /*Used in message area input*/
-  --loop-gif4: url('https://64.media.tumblr.com/8da032603a2ff3343c32833d7959e7bc/tumblr_p61tzgchCN1qeyvpto1_500.gifv');                                         /*Used in guild popouts > Mentioned card*/
-  --loop-gif5: url('https://64.media.tumblr.com/998b664cb9fd89a155b3b105dbdc9a09/808262fefad64e38-9c/s500x750/5f09d008c448b11092d119bf69d0751e08d79631.gifv');  /*Used in emoji, sticker, gif, nitro, pinned messages and left click on dm in friends tab*/
-  --loop-gif-diamond: url('https://giffiles.alphacoders.com/143/14390.gif');                                                                                    /*Used on home icon*/
+  --loop-gif: url('https://github.com/xy-nyxy/AnotherEternity/blob/main/background/loop-gif.gif?raw=true'); /*Used in files background*/
+  --loop-gif2: url('https://github.com/xy-nyxy/AnotherEternity/blob/main/background/loop-gif2.gif?raw=true'); /*Used in guild popouts > User popout*/
+  --loop-gif3: url('https://github.com/xy-nyxy/AnotherEternity/blob/main/background/loop-gif3.gif?raw=true'); /*Used in guild popouts > Mentioned card*/
+  --loop-gif-diamond: url('https://github.com/xy-nyxy/AnotherEternity/blob/main/background/loop-gif-diamond.gif?raw=true'); /*Used on home icon*/
+  --logo-photo: url('https://raw.githubusercontent.com/xy-nyxy/AnotherEternity/main/background/Wumpus%20Pink.gif'); /*Used in Friends tab when no friends are online*/
   /*Borders*/
   --border1: 2px solid var(--Secondary-Color); /*master border*/
   --border2: 2px solid var(--Third-Color); /*border 2*/
-  --border3: 2px solid rgb(90,0,150); /*border 3*/
+  --border3: 2px solid rgb(143, 143, 143); /*border 3*/
   
   /*Others variables*/
   /*Radial status*/
-  --rs-small-spacing: 0px; /* Gap between avatar and status for members list/dms | MUST end in px */
-  --rs-medium-spacing: 0.1px; /* Gap between avatar and status for User popout | MUST end in px */
-  --rs-large-spacing: 0px; /* Gap between avatar and status for User profiles | MUST end in px */
-  --rs-small-width: 2px; /* Thickness of status border for members list/dms | MUST end in px */
-  --rs-medium-width: 3px; /* Thickness of status border for User popout | MUST end in px */
-  --rs-large-width: 4px; /* Thickness of status border for User profile | MUST end in px */
-  --rs-avatar-shape: 50%; /* 50% for round - 0% for square */
-  --rs-online-color: #21df00; /* Colour for online status */
-  --rs-idle-color: #ffffff; /* Colour for idle status */
-  --rs-dnd-color: #ee0000; /* Colour for dnd status */
-  --rs-offline-color: #636b75; /* Colour for offline status */
-  --rs-streaming-color: #b300fa; /* Colour for streaming status */
-  --rs-invisible-color: #747f8d; /* Colour for invisible status - Note: this will only show for your own invisibility */
-  --rs-phone-color: var(--rs-online-color); /* Colour of the ring and phone icon when a user is on their phone |  */
-  /*edited only this one below*/
-  --rs-phone-visible: none; /* Visibility of the phone icon next to a users avatar. | block = visible | none = hidden */
+  --rs-small-spacing: 0px;
+  --rs-medium-spacing: 0.1px;
+  --rs-large-spacing: 0px;
+  --rs-small-width: 2px;
+  --rs-medium-width: 3px;
+  --rs-large-width: 4px;
+  --rs-avatar-shape: 50%;
+  --rs-online-color: #21df00;
+  --rs-idle-color: #faa81a;
+  --rs-dnd-color: #ee0000;
+  --rs-offline-color: #636b75;
+  --rs-streaming-color: #b300fa;
+  --rs-invisible-color: #747f8d;
+  --rs-phone-color: var(--rs-online-color);
+  --rs-phone-visible: none;
 }
 /*Discord's global variables copy-paste and edited*/
 .theme-dark, .theme-light {
@@ -81,16 +78,16 @@ $$ |  $$ |$$ |      $$ |  $$ |$$ |  $$ |$$ |  $$ |$$ |      $$\   $$ |
   --header-secondary: #7a7f86;
   --text-normal: #fff;
   --text-muted: #55585d;
-  --text-link: hsl(197,calc(var(--saturation-factor, 1)*100%),47.8%);
-  --text-link-low-saturation: hsl(197,calc(var(--saturation-factor, 1)*100%),52.9%);
+  --text-link: var(--Main-Color);
+  --text-link-low-saturation: var(--Secondary-Color);
   --text-positive: hsl(139,calc(var(--saturation-factor, 1)*66.8%),58.6%);
   --text-warning: hsl(38,calc(var(--saturation-factor, 1)*95.7%),54.1%);
   --text-danger: hsl(359,calc(var(--saturation-factor, 1)*82.6%),59.4%);
   --text-brand: hsl(235,calc(var(--saturation-factor, 1)*86.1%),77.5%);
-  --interactive-normal: #72767d;
-  --interactive-hover: #fff;
-  --interactive-active: #fff;
-  --interactive-muted: #55585d;
+  --interactive-normal: var(--Third-Color);
+  --interactive-hover: var(--Secondary-Color);
+  --interactive-active: var(--Main-Color);
+  --interactive-muted: var(--Color-4);
   --background-primary: transparent;
   --background-secondary: transparent;
   --background-secondary-alt: transparent;
@@ -113,7 +110,7 @@ $$ |  $$ |$$ |      $$ |  $$ |$$ |  $$ |$$ |  $$ |$$ |      $$\   $$ |
   --status-warning-text: #000;
   --scrollbar-thin-thumb: var(--Main-Color);
   --scrollbar-thin-track: transparent;
-  --scrollbar-auto-thumb: transparent;
+  --scrollbar-auto-thumb: var(--Secondary-Color);
   --scrollbar-auto-track:  transparent;
   --scrollbar-auto-scrollbar-color-thumb: transparent;
   --scrollbar-auto-scrollbar-color-track: transparent;
@@ -126,10 +123,10 @@ $$ |  $$ |$$ |      $$ |  $$ |$$ |  $$ |$$ |  $$ |$$ |      $$\   $$ |
   --control-brand-foreground-new: hsl(235,calc(var(--saturation-factor, 1)*86.1%),77.5%);
   --background-mentioned: transparent;
   --background-mentioned-hover: transparent;
-  --background-message-hover: transparent;
+  --background-message-hover: var(--Color-5);
   --background-message-automod: transparent;
   --background-message-automod-hover: transparent;
-  --channels-default: #8e9297;
+  --channels-default: var(--Secondary-Color);
   --guild-header-text-shadow: 0 1px 1px rgba(0,0,0,0.4);
   --channeltextarea-background: transparent;
   --activity-card-background: #202225;
@@ -147,6 +144,7 @@ $$ |  $$ |$$ |      $$ |  $$ |$$ |  $$ |$$ |  $$ |$$ |      $$\   $$ |
   --deprecated-text-input-border-disabled: #202225;
   --deprecated-text-input-prefix: #dcddde;
   --button--underline-color: transparent !important;
+  --channel-icon: var(--Secondary-Color);
 }
 
 /*Brand experminet things (idk what i did here but works)*/
@@ -198,32 +196,6 @@ $$ |  $$ |$$ |      $$ |  $$ |$$ |  $$ |$$ |  $$ |$$ |      $$\   $$ |
 	--brand-experiment-95a: hsla(305, calc(var(--saturation-factor, 1)*59.9%), 44.2%, 0.95);
 }
 
-/*Bold font EVERYWHERE*/
-*{font-weight: 900 !important}
-
-/*
-$$$$$$$\   $$$$$$\  $$$$$$$\  $$$$$$\  $$$$$$\  $$\              $$$$$$\  $$$$$$$$\  $$$$$$\  $$$$$$$$\ $$\   $$\  $$$$$$\  
-$$  __$$\ $$  __$$\ $$  __$$\ \_$$  _|$$  __$$\ $$ |            $$  __$$\ \__$$  __|$$  __$$\ \__$$  __|$$ |  $$ |$$  __$$\ 
-$$ |  $$ |$$ /  $$ |$$ |  $$ |  $$ |  $$ /  $$ |$$ |            $$ /  \__|   $$ |   $$ /  $$ |   $$ |   $$ |  $$ |$$ /  \__|
-$$$$$$$  |$$$$$$$$ |$$ |  $$ |  $$ |  $$$$$$$$ |$$ |            \$$$$$$\     $$ |   $$$$$$$$ |   $$ |   $$ |  $$ |\$$$$$$\  
-$$  __$$< $$  __$$ |$$ |  $$ |  $$ |  $$  __$$ |$$ |             \____$$\    $$ |   $$  __$$ |   $$ |   $$ |  $$ | \____$$\ 
-$$ |  $$ |$$ |  $$ |$$ |  $$ |  $$ |  $$ |  $$ |$$ |            $$\   $$ |   $$ |   $$ |  $$ |   $$ |   $$ |  $$ |$$\   $$ |
-$$ |  $$ |$$ |  $$ |$$$$$$$  |$$$$$$\ $$ |  $$ |$$$$$$$$\       \$$$$$$  |   $$ |   $$ |  $$ |   $$ |   \$$$$$$  |\$$$$$$  |
-\__|  \__|\__|  \__|\_______/ \______|\__|  \__|\________|       \______/    \__|   \__|  \__|   \__|    \______/  \______/ 
-*/
-/*Idle status color to white status color*/
-.status-2DiCMd {
-  width: 100%;
-  height: 100%;
-  background-color: var(--Black-Color) !important;
-}
-.pointerEvents-9SZWKj {
-  pointer-events: auto;
-  background-color: rgb(0,0,0) !important;
-  color: rgb(0,0,0) !important;
-}
-
-
 /*
 $$\      $$\  $$$$$$\  $$$$$$$$\ $$$$$$$$\ $$$$$$$\  $$\      $$\  $$$$$$\  $$$$$$$\  $$\   $$\ 
 $$ | $\  $$ |$$  __$$\ \__$$  __|$$  _____|$$  __$$\ $$$\    $$$ |$$  __$$\ $$  __$$\ $$ | $$  |
@@ -235,9 +207,8 @@ $$  /   \$$ |$$ |  $$ |   $$ |   $$$$$$$$\ $$ |  $$ |$$ | \_/ $$ |$$ |  $$ |$$ |
 \__/     \__|\__|  \__|   \__|   \________|\__|  \__|\__|     \__|\__|  \__|\__|  \__|\__|  \__|
 */
 div[class*="typeWindows-"]::after {
-  content: '🔮ANOTHER ETERNITY🔮 v1.0.5';
+  content: 'Discord dead inside';
   font-weight: bold;
-  font-style: italic;
   font-size: 14px;
   line-height: 30px;
   top: 0;
@@ -313,6 +284,9 @@ Titlebar top buttons colors. Close, rezise and hide*/
 .channelTextArea-1VQBuV {
   background-color: black !important;
 }
+.editor-H2NA06 {
+  caret-color: var(--Secondary-Color) !important;
+}
 
 /*Upload files button color*/
 /*Stable*/
@@ -335,7 +309,10 @@ Titlebar top buttons colors. Close, rezise and hide*/
 
 /*"You are viewing older messages" popout*/
 .jumpToPresentBar-1cEnH0 {
-  border: none;
+  border: 1px solid var(--Secondary-Color);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  padding-bottom: 4px ;
   background: black !important;
 }
 /*"You are viewing older messages" color*/
@@ -348,11 +325,9 @@ Titlebar top buttons colors. Close, rezise and hide*/
 }
 
 /*Emoji popout*/
-.emojiPickerInExpressionPicker-2nOwH8 .emojiPicker-6YCk8a, .wrapper-3u51GQ {
+.wrapper-3u51GQ {
   background: black;
   border-radius: 15px;
-  border-color: rgb(var(--Neon-Rgb)) !important;
-  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
 }
 .contentWrapper-3vHNP2 {
   padding: 6px;
@@ -362,11 +337,11 @@ Titlebar top buttons colors. Close, rezise and hide*/
   box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
 }
 /*Little fix for background*/
-.list-obNEuP, .emojiPicker-6YCk8a {
+.list-obNEuP {
   background-color: transparent !important;
 }
 /*Header*/
-.emojiPickerInExpressionPicker-2nOwH8 .header-11eigE {
+.header-11eigE {
   padding: 0px 0px 15px;
   background-color: transparent;
   border-bottom-right-radius: 0;
@@ -393,12 +368,8 @@ Titlebar top buttons colors. Close, rezise and hide*/
   color: var(--Main-Color);
 }
 
-/*Emoji popout FROM message (icon click)*/
-.emojiPicker-6YCk8a {
-  background: black;
-}
 /*Sticker & gif popouts*/
-.emojiPickerInExpressionPicker-2nOwH8, .wrapper-1NB3WY, .container-3u7RcY {
+.emojiPickerInExpressionPicker-2nOwH8, .container-3u7RcY {
   background: transparent;
 }
 /*Gif popout, favorite fade*/
@@ -431,10 +402,6 @@ Titlebar top buttons colors. Close, rezise and hide*/
 }
 /*Mentioned*/
 .recentMentionsPopout-2bI1ZN {
-  width: 35vw;
-  max-width: 600px;
-  min-width: 480px;
-  max-height: 80vh;
   background-color: black;
   border-color: rgb(var(--Neon-Rgb));
   box-shadow: inset 0px 0px 5px 2.5px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb));
@@ -458,9 +425,24 @@ Titlebar top buttons colors. Close, rezise and hide*/
 /*Left click on friends tab popout*/
 .menu-1QACrS {
   background: black !important;
+  border-radius: 15px;
   border-color: rgb(var(--Neon-Rgb));
   box-shadow: inset 0px 0px 5px 2.5px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb));
 }
+.accountProfilePopoutWrapper-3GskID [class^=menu-1QACrS]{
+  background: none !important;
+  box-shadow: none;
+}
+.scroller-1bVxF5 {
+  background-color: transparent;
+  border: transparent !important;
+}
+.item-1OdjEX:hover {
+  color: var(--Main-Color) !important;
+  background-color: var(--Color-5) !important;
+  border-radius: 12px;
+}
+
 /*Button clicked*/
 .colorDefault-CDqZdO:active:not(.hideInteraction-2jPGL_) {
   background-color: transparent;
@@ -504,6 +486,9 @@ Titlebar top buttons colors. Close, rezise and hide*/
 .divider-2rZFJK {
   border-top: var(--border2);
 }
+.cozy-VmLDNB .timestamp-p1Df1m {
+  color: var(--Third-Color) !important;
+}
 
 /*Emoji searching, matching When typing for an emoji in chat "ex: :wink"*/
 .theme-dark .autocomplete-3NRXG8 {
@@ -524,34 +509,59 @@ Titlebar top buttons colors. Close, rezise and hide*/
   border-color: rgb(var(--Neon-Rgb));
   box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb));
 }
-/*Search Options header color*/
+/*Icon and "Search" text colors*/
+.search-2Mwzzq .DraftEditor-root .public-DraftEditorPlaceholder-root, .icon-18rqoe {
+  color: var(--Third-Color);
+}
+
+/*"Search Options" header container, text color*/
 .resultsGroup-cfY57t .header-1BR0Ro {
   color: var(--Main-Color);
 }
 /*Subcategories (from, mentions, has, before, during, after, in, pinned) text color*/
+.option-ayUoaq .searchOption-3u1gRt, .searchOption-3u1gRt .filter-2QaH9y, .searchOption-3u1gRt .answer-14OVbQ, .resultsGroup-cfY57t .plusIcon-1RVszG {
+  color: var(--Secondary-Color) !important; 
+}
+/*Search history*/
 /*Stable*/
-.searchOption-3u1gRt .filter-2QaH9y {
-  color: var(--Third-Color);
-  font-weight: 600;
+.option-ayUoaq, .option-ayUoaq .filter-2QaH9y, .option-ayUoaq .answer-14OVbQ {
+  color: var(--Secondary-Color) !important;
 }
 /*Hover*/
-.searchOption-3u1gRt .filter-2QaH9y:hover {
-  color: var(--Secondary-Color);
-  font-weight: 600;
-}
-/*Selected*/
-.searchOption-3u1gRt .filter-2QaH9y[aria-selected=true] {
-  color: var(--Main-Color);
-  font-weight: 600;
+.option-ayUoaq:hover {
+  background-color: var(--Color-5);
+  border-radius: 15px;
 }
 
-/*Search bar text color*/
-.DraftEditor-editorContainer {
-  background-color: hsla(0,0%,100%,0);
-  border-left: .1px solid transparent;
-  position: relative;
-  z-index: 1;
+/*Delete history*/
+/*Stable*/
+.resultsGroup-cfY57t .searchClearHistory-3nIKUO, .resultsGroup-cfY57t .searchLearnMore-1gNL3A {
   color: var(--Secondary-Color) !important;
+}
+/*Hover*/
+.resultsGroup-cfY57t .searchClearHistory-3nIKUO:hover, .resultsGroup-cfY57t .searchLearnMore-1gNL3A:hover {
+  color: var(--Main-Color) !important;
+}
+
+/*Search input text color*/
+.search-2Mwzzq .DraftEditor-root .public-DraftStyleDefault-block {
+  color: var(--Main-Color) !important;
+}
+
+/*After searching text color*/
+.queryText-j8z984, .theme-dark .queryContainer-ZunrLZ strong  {
+  color: var(--Secondary-Color) !important;
+}
+.queryShortcut-GrmI-7 {
+  background-color: black !important;
+  border-radius: 15px;
+  border-color: rgb(var(--Neon-Rgb));
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb));
+}
+.theme-dark .keybindShortcut-3zF1P9, .theme-dark .keybindShortcut-3zF1P9 .key-N5VmHN {
+  background-color: transparent !important;
+  color: var(--Main-Color);
+  box-shadow: none !important;
 }
 
 /*Also in this popout, the last thing thing from a button*/
@@ -577,21 +587,13 @@ Titlebar top buttons colors. Close, rezise and hide*/
 
 /*Custom background for home icon and for guilds with no photos*/
 .childWrapper-1j_1ub {
-  -webkit-transition: background-color .15s ease-out,color .15s ease-out;
-  transition: background-color .15s ease-out,color .15s ease-out;
-  background: linear-gradient(rgba(255, 0, 0, 0.4),rgba(255, 0, 0, 0.3)) , var(--loop-gif-diamond) 50% 100%/cover !important;
+  background: linear-gradient(rgba(170, 0, 158, 0.4),rgba(170, 0, 158, 0.3)) , var(--loop-gif-diamond) 50% 100%/cover !important;
   color: var(--text-normal);
 }
 
 /*Reactions popout from "See reactions" background*/
-.theme-dark .container-KM8BU6 {
-  background-color: transparent;
-}
-.theme-dark .reactors-1VXca7 {
-  background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.8)) , var(--loop-gif5) 50% 100%/cover !important;
-}
-.theme-dark .scroller-2GkvCq { 
-  background-color: transparent;
+.theme-dark .container-KM8BU6, .theme-dark .reactors-1VXca7, .scroller-2GkvCq {
+  background-color: black !important;
 }
 
 /*Message buttons*/
@@ -604,18 +606,42 @@ Titlebar top buttons colors. Close, rezise and hide*/
   color: var(--Main-Color);
 }
 
-/*User popout cards*/
-.focusLock-2tveLW, .root-g14mjS {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  background-color: black !important;
+/*Camera preview popout*/
+.modalRoot-1bgrci {
+  background-color: black;
+  border-radius: 15px;
   border-color: rgb(var(--Neon-Rgb)) !important;
   box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
+}
+
+/*Data picker*/
+.react-datepicker {
+  background-color: transparent !important;
+}
+.react-datepicker__month-container, .theme-dark .calendarPicker-sDhzdi .react-datepicker__day {
+  color: var(--Main-Color);
+}
+.calendarPicker-sDhzdi .react-datepicker__header, .react-datepicker__month, .react-datepicker__day-names, .react-datepicker__week {
+  background-color: transparent !important
+}
+
+/*Back button*/
+.calendarPicker-sDhzdi .react-datepicker__navigation.react-datepicker__navigation--next, .calendarPicker-sDhzdi .react-datepicker__navigation.react-datepicker__navigation--previous {
+  margin-top: 1px;
+  margin-left: 1px;
+  border: 1px var(--Main-Color) solid !important;
+}
+
+/*Disabled days*/
+.theme-dark .calendarPicker-sDhzdi .react-datepicker__day--disabled, .theme-dark .calendarPicker-sDhzdi .react-datepicker__day--outside-month, .theme-dark .calendarPicker-sDhzdi .react-datepicker__day.react-datepicker__day--disabled, .theme-dark .calendarPicker-sDhzdi .react-datepicker__day.react-datepicker__day--disabled:hover {
+  color: var(--Main-Color);
+  background-color: var(--Color-5);
+}
+
+/*Borders*/
+.calendarPicker-sDhzdi .react-datepicker__day {
+  border-top: 1px solid var(--Color-5);
+  border-left: 1px solid var(--Color-5);
 }
 
 /*Member since icon color*/
@@ -663,19 +689,27 @@ Titlebar top buttons colors. Close, rezise and hide*/
 .top-K_jibn .selected-g-kMVV.themed-2-lozF.item-3XjbnG, .top-K_jibn .themed-2-lozF.item-3XjbnG {
   border-bottom: none;
 }
+/*divider backgrounds*/
+.divider-1tWBgZ {
+  background-color: transparent !important;
+}
 
 /*Almost all buttons*/
 /*Stable*/
 .button-f2h6uQ .contents-3ca1mk {
   --button--underline-color: transparent;
-  color: var(--Secondary-Color) !important;
+  color: var(--Main-Color) !important;
   border-radius: 15px;
+  background-image: none !important;
+  text-decoration: none !important;
 }
 /*Hover*/
 .button-f2h6uQ .contents-3ca1mk:hover {
   --button--underline-color: transparent;
   color: var(--Main-Color) !important;
   border-radius: 15px;
+  background-image: none !important;
+  text-decoration: none !important;
 }
 /*Change phone number? and Remove email button*/
 /*Stable*/
@@ -734,6 +768,12 @@ Titlebar top buttons colors. Close, rezise and hide*/
   color: var(--Secondary-Color);
 }
 
+/*Icons colors*/
+/*First > thread in a forum icon color from beggining. Second > forum name > thread name, the ">" color*/
+.icon-3gfzEo, .caret-1le2LN {
+  color: var(--Main-Color);
+}
+
 /*Create new thread from message*/
 /*Icon color when container opened*/
 .icon-382itv {
@@ -756,20 +796,53 @@ Titlebar top buttons colors. Close, rezise and hide*/
   border-radius: 15px;
   background-color: var(--Color-5);
 }
+.inputWrapper-1YNMmM {
+  padding-left: 5px;
+  padding-bottom: 2px;
+}
 
 /*Nitro gifts in dms/channels*/
 /*backgrounds*/
-.scroller-2M3eAB {
+.scroller-2M3eAB, .content-2eQb8J {
+  background: transparent !important;
+}
+.modalHeader-gQTY3L {
   background: black;
 }
-.breadcrumbsWrapper--2LhnQ {
-  background: black;
+.headerBackground-131uxy {
+  background: transparent;
 }
-.content-2eQb8J {
-  background: black;
+.tier2Foreground-2DWr4f, .wrapper-38Ds8r svg {
+  background-color: transparent !important;
+  background: transparent !important;
+  background-image: none !important;
 }
-.wrapper-38Ds8r svg {
-  background: black;
+
+/*Nitro gifts by discord.gift, whole card*/
+/*Stable*/
+.tile-2mmK5T {
+  background-color: black;
+  border-radius: 15px;
+  border: 1px var(--Main-Color) solid;
+}
+/*Hover*/
+.tile-2mmK5T:hover {
+  border-color: rgb(var(--Neon-Rgb)) !important;
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
+}
+
+/*Both cards background*/
+.description-X8_53U, .mediaHorizontal-1eDgDq {
+  background-color: black;
+}
+
+/*Title color*/
+.title-oJa_A6 {
+  color: var(--Main-Color);
+}
+/*Description color*/
+.theme-dark .tagline-3DhQWg {
+  color: var(--Secondary-Color);
 }
 
 /*Nitro text color*/
@@ -790,6 +863,11 @@ Titlebar top buttons colors. Close, rezise and hide*/
 /*Arrows colors*/
 .breadcrumbArrow-1LY2zF {
   color: var(--Secondary-Color);
+}
+
+/*Toal to pay color*/
+.pricePerInterval-3PUiOj strong {
+  color: var(--Main-Color);
 }
 
 /*Choose one text color*/
@@ -833,7 +911,7 @@ Titlebar top buttons colors. Close, rezise and hide*/
 
 /*Keyboard shortcuts modals (ctrl + /)*/
 /*backgrounds*/
-.theme-dark .root-g14mjS, .keyboardShortcutsModal-2CRmCm, .keyboardShortcutList-3VFAYS {
+.keyboardShortcutsModal-2CRmCm, .keyboardShortcutList-3VFAYS {
   background-color: black;
 }
 .auto-2K3UW5.scrollerBase-_bVAAt.fade-1R6FHN {
@@ -878,6 +956,13 @@ Titlebar top buttons colors. Close, rezise and hide*/
   color: var(--Main-Color);
   background-color: var(--Color-5);
 }
+
+/*Channels list hover*/
+.result-u66Ywh[aria-selected=true] {
+  background-color: var(--Color-5);
+  border-radius: 15px;
+}
+
 /*Previous channels headers*/
 .header-1ZpMzy {
   color: var(--Main-Color);
@@ -908,7 +993,7 @@ Titlebar top buttons colors. Close, rezise and hide*/
 /*"Careful -- You have unsaved changes!" popout*/
 .container-20TyK0 {
   background-color: black !important;
-  width: 2000px;
+  width: 1000px;
   position: static !important;
   border-color: rgb(var(--Neon-Rgb)) !important;
   box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
@@ -937,10 +1022,208 @@ Titlebar top buttons colors. Close, rezise and hide*/
   color: var(--Main-Color);
 }
 
-/*#################### Invite modal ####################*/
-.theme-dark .contentWrapper-3oy4Xo {
-  background-color: transparent;
+/*Guild Boost modal*/
+/*text color*/
+.perkDescription-3e1T_w {
+  color: var(--Main-Color);
+}
+
+/*After clicking boost this server*/
+/*Photo removal*/
+.tier2Foreground-2DWr4f, .wrapper-38Ds8r svg {
+  display: none;
+}
+/*background*/
+.guildBackground-3BSNJY, .animation-3szaot, .header-kxb7f7 {
+  background-image: none !important;
+}
+
+/*"Help a server unlock..." text color*/
+.bodyText-1qcdxO {
+  color: var(--Main-Color);
+}
+
+/*Add, remove (+ -) - Buttons colors*/
+/*Stable*/
+.icon-2TbMdT, .icon-2TbMdT.disabled-2gUzwG {
+  color: var(--Secondary-Color);
+  background-color: var(--Color-5);
+}
+/*Hover*/
+.icon-2TbMdT:hover, .icon-2TbMdT.disabled-2gUzwG:hover {
+  color: var(--Main-Color);
+  background-color: var(--Color-4);
+}
+
+/*"Server boosts", subtotal, "You could be paying 30%..." text color*/
+.planSelectorLabel-2T9D_0, .planSelectorSubtotal-1A7sWH, .upsellFooter-1H_OCF, .bodyText-3Op3yx {
+  color: var(--Main-Color);
+}
+
+/*Price, price per interval text color*/
+.planSelectorPreviewPrice-3is8Gl, .pricePerInterval-3PUiOj {
+  color: var(--Secondary-Color);
+}
+
+/*Code upload (as a file) box container*/
+.container-rr3Ruk {
+  background-color: black;
   border-radius: 15px;
+  border-color: rgb(var(--Neon-Rgb)) !important;
+  box-shadow: inset 0px 0px 1px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 1px rgb(var(--Neon-Rgb)) !important;
+}
+/*Change language popout fix*/
+.languageSelector-2e1IuO {
+  background-color: black;
+  border-radius: 15px;
+  border-color: rgb(var(--Neon-Rgb)) !important;
+  box-shadow: inset 0px 0px 1px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 1px rgb(var(--Neon-Rgb)) !important;
+}
+/*Languages list*/
+/*Stable*/
+.item-1BCeuB {
+  color: var(--Secondary-Color);
+}
+/*Hover*/
+.item-1BCeuB:hover {
+  color: var(--Main-Color) !important;
+}
+
+/*Attachement name, code size text colors */
+/*Stable*/
+.attachmentName-vgRpzs, .formattedSize-1YbZww {
+  color: var(--Secondary-Color);
+}
+/*Hover + Expand code, open full view, code size and change language icons on hover colors*/
+.attachmentName-vgRpzs:hover, .toggleExpandSection-1710zV:hover, .openFullPreviewSection-31zc2v:hover, .formattedSize-1YbZww:hover, .attachmentName-vgRpzs:hover, .codeIcon-Ni8XUA:hover {
+  color: var(--Main-Color);
+}
+
+/*New popout about nitro (update 25.10.2022)*/
+.contentPremium-_Y0-cX {
+  background-color: black !important;
+}
+
+/*Links with popouts*/
+/*Description color*/
+.embedDescription-1DrJxZ {
+  color: var(--Secondary-Color);
+}
+/*Background*/
+.grid-1aWVsE {
+  background-color: black;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+/*Add a server & explore public servers icons colors*/
+.circleIconButton-1VxDrg {
+  color: var(--Third-Color);
+  background-color: var(--Color-5);
+}
+.circleIconButton-1VxDrg.selected-2r1Hvo {
+  color: var(--Main-Color);
+  background-color: var(--Color-6);
+}
+
+/*Server invites paused icon on server*/
+.pauseBackground-1zgiN0 {
+  background-color: var(--Third-Color);
+  color: var(--Main-Color) !important;
+}
+
+/*In call "focus, more, show chat" icons*/
+.controlIcon-10O-4h {
+  color: var(--Third-Color);
+}
+.controlIcon-10O-4h:hover {
+  color: var(--Secondary-Color);
+}
+
+/*Invite button color*/
+.buttonColor-28DXIe {
+  border-radius: 15px;
+  background-color: black;
+  border: 1px solid var(--Third-Color);
+}
+.buttonColor-28DXIe:hover {
+  background-color: black;
+  border-radius: 15px;
+  border-color: rgb(var(--Neon-Rgb)) !important;
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
+}
+
+/*Control buttons*/
+/*When stable all icons colors*/
+.colorable-3rVGna.primaryDark-2UJt1G, .colorable-3rVGna.primaryDark-2UJt1G .centerIcon-JYpTUi {
+  color: var(--Main-Color);
+}
+/*When stable unmuted, camera, activity, share screen activity, emoji icon colors*/
+.colorable-3rVGna.primaryDark-2UJt1G {
+  background-color: var(--Color-5);
+}
+/*When muted icon color*/
+.colorable-3rVGna.white-11auuQ .centerIcon-JYpTUi {
+  color: var(--Main-Color);
+}
+/*When muted icon color*/
+.colorable-3rVGna.white-11auuQ {
+  background-color: var(--Color-4);
+}
+/*When hover on unmute and emoji icon color*/
+.colorable-3rVGna.white-11auuQ.active-3D763s, .colorable-3rVGna.white-11auuQ:hover {
+  background-color: var(--Color-6);
+}
+/*When hover on camera, activity, share screen colors*/
+.colorable-3rVGna.primaryDark-2UJt1G.active-3D763s, .colorable-3rVGna.primaryDark-2UJt1G:hover {
+  background-color: var(--Color-6);
+}
+/*Stable disconnect icon*/
+.colorable-3rVGna.red-3T8maV {
+  background-color: var(--Color-5);
+  color: var(--Main-Color);
+}
+/*When hover on disconnect*/
+.colorable-3rVGna.red-3T8maV:hover {
+  background-color: var(--Color-6);
+  border-color: rgb(var(--Neon-Rgb2)) !important;
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb2)), 0px 0px 15px 4px rgb(var(--Neon-Rgb2)) !important;
+}
+/*Disconnect color icon*/
+.centerIcon-JYpTUi, .centerIcon-JYpTUi:hover {
+  color: var(--Main-Color) !important;
+}
+
+/*Invite button from no one else is here yet, invite people to join*/
+.button-3Vyz67 {
+  background-color: var(--Color-5);
+}
+.button-3Vyz67:hover {
+  background-color: var(--Color-6);
+}
+
+/*Name background color*/
+.overlayTitle-2efoIF {
+  background-color: var(--Color-5);
+}
+
+/*Muted/deafen icon*/
+.status-15kcmy {
+  color: var(--Main-Color);
+  background-color: var(--Color-5);
+}
+
+/*When someone is speaking border*/
+.border-2Vy6FN.speaking-7QZEkv {
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
+}
+
+/*Emoji colors*/
+.slots-paZlX-, .slotsContainer-3Li39W {
+  background-color: black;
+}
+.container-3a5mk- {
+  background-color: black;
 }
 
 /*
@@ -959,18 +1242,13 @@ $$ |  $$ | $$$$$$  |$$ | \_/ $$ |$$$$$$$$\
   background-color: transparent !important;
 }
 
-/*Friends, nitro tabs and dms colors*/
-/*Stable*/
-.content-66wMin, .name-2m3Cms {
-  color: var(--Third-Color);
-}
-/*Hover*/
-.content-66wMin, .name-2m3Cms:hover {
+/*"No one is around to play with wumpus" text message*/
+.text-27cdrj, .title-2CL_z0 {
   color: var(--Secondary-Color);
 }
-/*Selected*/
-.content-66wMin, .name-2m3Cms[aria-selected=true] {
-  color: var(--Main-Color);
+/*The image*/
+.image-20MDYu {
+  background-image: var(--logo-photo) !important;
 }
 
 /*Activity cards background "In a voice channel"*/
@@ -1010,20 +1288,6 @@ $$ |  $$ | $$$$$$  |$$ | \_/ $$ |$$$$$$$$\
 /*It's quiet from now message*/
 .emptyCard-KDifrB {
   background: transparent !important;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-align: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
   border-radius: 8px;
   padding: 16px;
   color: var(--Main-Color) !important;
@@ -1071,14 +1335,6 @@ $$ |  $$ | $$$$$$  |$$ | \_/ $$ |$$$$$$$$\
 /*Online friends card*/
 /*Name and status color*/
 .text-3j8t_e {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  overflow: hidden;
   color: var(--Secondary-Color);
 }
 
@@ -1101,43 +1357,35 @@ $$ |  $$ | $$$$$$  |$$ | \_/ $$ |$$$$$$$$\
 
 /*Direct Messages Text Color*/
 .headerText-1qIDDT {
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  overflow: hidden;
-  text-overflow: ellipsis;
   color: var(--Main-Color) !important;
 }
 
 /*Friends Text Color*/
 .title-17SveM {
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  overflow: hidden;
-  white-space: nowrap;
   color: var(--Main-Color) !important;
+}
+
+/*Know as (friend name in guild) color*/
+.tooltip-C5N4wl {
+  color: var(--Secondary-Color);
 }
 
 /*Find or start a conversation Text Color*/
+/*Stable*/
 .searchBar-3TnChZ .searchBarComponent-3N7dCG {
-  width: 100%;
-  height: 28px;
-  overflow: hidden;
-  border-radius: 4px;
-  background-color: var(--background-tertiary);
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  text-align: left;
-  text-overflow: ellipsis;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 24px;
-  white-space: nowrap;
-  color: var(--Main-Color) !important;
+  color: var(--Secondary-Color);
+}
+/*Hover*/
+.searchBar-3TnChZ .searchBarComponent-3N7dCG:hover {
+  color: var(--Main-Color);
 }
 
 /*#################### Invite modal ####################*/
+/*Backgrounds*/
+.theme-dark .contentWrapper-3oy4Xo {
+  background-color: transparent;
+  border-radius: 15px;
+}
 .modal-atz_3z {
   border-radius: 15px !important;
 }
@@ -1210,6 +1458,66 @@ $$ |  $$ | $$$$$$  |$$ | \_/ $$ |$$$$$$$$\
   color: var(--Secondary-Color);
 }
 
+/*#################### Discovery tab ####################*/
+/*Main background*/
+.interactive-iyXY_x {
+  background-color: transparent;
+}
+.scroller-3j5xK2 {
+  background-color: black !important;
+}
+.interactive-iyXY_x:hover {
+  border-radius: 15px;
+  background-color: var(--Color-5);
+}
+.interactive-iyXY_x[aria-selected=true], .selected-3veCBZ {
+  border-radius: 15px;
+  background-color: var(--Color-6);
+}
+
+/*Search thing*/
+.search-25t1e9 .searchBox-31Zv9h {
+  background-color: black !important;
+  color: var(--Main-Color);
+}
+/*input color*/
+.searchBoxInputWrapper-3XLwVB {
+  color: var(--Main-Color);
+}
+/*Border color*/
+.search-25t1e9 .searchBox-31Zv9h:focus, .search-25t1e9 .searchBox-31Zv9h:focus-within, .theme-dark .searchBox-pyIJJj {
+  border-radius: 15px;
+  border-color: rgb(var(--Neon-Rgb)) !important;
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
+}
+
+/*Server Cards*/
+.card-2TuZPZ {
+  border-radius: 15px;
+  border: 1px var(--Main-Color) solid;
+}
+.card-2TuZPZ:hover {
+  border-radius: 15px;
+  border-color: rgb(var(--Neon-Rgb)) !important;
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
+}
+
+/*Student hubs headertext colors*/
+.text-lg-semibold-2iEErr {
+  color: var(--Main-Color) !important;
+}
+
+/*Blur blocked users list*/
+/*Stable*/
+.listItemContents-f4Uz5J {
+  filter: blur(8px) !important;
+}
+/*Hover*/
+.listItemContents-f4Uz5J:hover {
+  filter: blur(0px) !important;
+}
+
+
 /*
  $$$$$$\  $$$$$$$$\ $$$$$$$\  $$$$$$$$\  $$$$$$\  $$\      $$\ $$$$$$\ $$\   $$\  $$$$$$\  
 $$  __$$\ \__$$  __|$$  __$$\ $$  _____|$$  __$$\ $$$\    $$$ |\_$$  _|$$$\  $$ |$$  __$$\ 
@@ -1220,15 +1528,6 @@ $$\   $$ |   $$ |   $$ |  $$ |$$ |      $$ |  $$ |$$ |\$  /$$ |  $$ |  $$ |\$$$ 
 \$$$$$$  |   $$ |   $$ |  $$ |$$$$$$$$\ $$ |  $$ |$$ | \_/ $$ |$$$$$$\ $$ | \$$ |\$$$$$$  |
  \______/    \__|   \__|  \__|\________|\__|  \__|\__|     \__|\______|\__|  \__| \______/ 
 */
-/*Screen Share Popout*/
-.theme-dark .root-g14mjS {
-    -webkit-box-shadow: 0 0 0 1px hsla(216,calc(var(--saturation-factor, 1)*7.2%),13.5%,.6),0 2px 10px 0 hsla(0,calc(var(--saturation-factor, 1)*0%),0%,.2);
-    background-color: black !important;
-    border-radius: 15px; 
-    border-color: rgb(var(--Neon-Rgb));
-    box-shadow: inset 0px 0px 2px 1px rgb(var(--Neon-Rgb)), 0px 0px 5px 1px rgb(var(--Neon-Rgb));
-}
-
 /*Screen share popout border*/
 /*Stable*/
 .theme-dark .elevationHigh-3KUiqj, .pictureInPictureVideo-2puO2Q {
@@ -1357,33 +1656,21 @@ $$\   $$ |   $$ |   $$ |  $$ |$$ |      $$ |  $$ |$$ |\$  /$$ |  $$ |  $$ |\$$$ 
   text-overflow: ellipsis;
   overflow: hidden;
   max-width: 100%;
-  font-weight: 500;
   margin-right: 8px;
   color: var(--Third-Color) !important;
 }
 /*Icon Color*/
 .selectedIcon-277z4I {
-    -ms-flex-negative: 0;
-    flex-shrink: 0;
     margin-right: 8px;
     color: var(--Third-Color) !important;
 }
 
 /*Streaming channel text color*/
 .channelName-3Ezu2W {
-    -webkit-box-flex: 1;
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
     color: var(--Third-Color);
 }
 /*Icon color*/
 .channelIcon-1BydE- {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 auto;
-    flex: 0 0 auto;
     margin-right: 5px;
     color: var(--Third-Color) !important;
 }
@@ -1396,15 +1683,6 @@ $$\   $$ |   $$ |   $$ |  $$ |$$ |      $$ |  $$ |$$ |\$  /$$ |  $$ |  $$ |\$$$ 
 
 /*Streaming popout preview controls icons colors*/
 .bottomControls-34xgN7 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
     color: var(--Main-Color) !important;
 }
 /*Streaming popout preview background*/
@@ -1426,11 +1704,15 @@ $$ | \_/ $$ |$$$$$$$$\ $$ | \$$ |   $$ |   $$$$$$\  $$$$$$  |$$ | \$$ |\$$$$$$  
 /*In guild channels*/
 /*Mentioned background (the yellow name)*/
 .mentioned-Tre-dv {
-  position: relative;
-  background-color: var(--background-primary);
+  background-color: var(--Color-5);
+  border-radius: 15px;
 }
 .mentioned-Tre-dv:before {
-  background-color: var(--background-primary);
+  background-color: transparent;
+}
+.message-2CShn3.selected-2LX7Jy, .mouse-mode.full-motion .message-2CShn3:hover, .message-2CShn3.mentioned-Tre-dv.selected-2LX7Jy, .mouse-mode.full-motion .mentioned-Tre-dv:hover {
+  background-color: var(--Color-5) !important;
+  border-radius: 15px;
 }
 
 /*Unread mentioned badge after channel in guild*/
@@ -1438,20 +1720,8 @@ $$ | \_/ $$ |$$$$$$$$\ $$ | \$$ |   $$ |   $$$$$$\  $$$$$$  |$$ | \$$ |\$$$$$$  
   pointer-events: none;
 }
 .base-3IDx3L {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  height: 16px;
-  min-width: 16px;
-  min-height: 16px;
-  font-size: 12px;
-  line-height: 16px;
-  font-weight: 600;
   color: var(--Main-Color) !important;
   background-color: var(--Color-4) !important;
-  text-align: center;
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
 }
 
 .mentionsBadge-3H1BKJ .iconBase-2RQsdz {
@@ -1474,19 +1744,20 @@ $$ |  $$ |$$\   $$ |$$ |      $$ |  $$ |      $$\   $$ |$$ |         $$ |      $
 .sidebarRegion-1VBisG {
   -ms-flex: 1 0 218px;
   flex: 0 0 0px;
-  z-index: 1;
-  -ms-flex-pack: end;
 }
 
 /*#################### My account tab ####################*/
 /*Page layout*/
 .contentColumn-1C7as6, .customColumn-2n-oKU {
-  -webkit-box-flex: 1;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   max-width: 2000px;
   min-width: 460px;
   min-height: 100%;
+}
+/*name and tag colors*/
+.username-3JLfHz, .discriminator-2m-MqL {
+  color: var(--Main-Color) !important;
 }
 
 /*Headers Text Colors (Username, Email, Phone Number, Two Factor Authentification, Sms Backup Authentification, Account removal)*/
@@ -1502,10 +1773,7 @@ $$ |  $$ |$$\   $$ |$$ |      $$ |  $$ |      $$\   $$ |$$ |         $$ |      $
 /*Two factor authentificator icon color*/
 .userSettingsSecurity-2kODPN .lockIcon-3t6Ow0 {
   margin-right: 4px;
-  width: 10px;
-  height: 14px;
   position: relative;
-  top: 2px;
   color: var(--Main-Color);
 }
 
@@ -1546,17 +1814,8 @@ $$ |  $$ |$$\   $$ |$$ |      $$ |  $$ |      $$\   $$ |$$ |         $$ |      $
 
 /*Username, Email, Phone Number (not the titles, the contents) text colors*/
 .text-md-medium-2avxhQ, .text-md-normal-304U3g {
-  font-family: var(--font-primary);
-  font-size: 16px;
-  font-weight: 900;
   line-height: 20px;
   color: var(--Main-Color) !important;
-}
-
-/*Reveal buttons*/
-.button-f2h6uQ .contents-3ca1mk{
-  background-image: none !important;
-  text-decoration: none !important;
 }
 
 /* #################### Profiles tab #################### */
@@ -1567,12 +1826,14 @@ $$ |  $$ |$$\   $$ |$$ |      $$ |  $$ |      $$\   $$ |$$ |         $$ |      $
   border-bottom: none !important;
   text-decoration: none !important;
   color: var(--Third-Color);
+  padding: 5px 10px 5px 10px;
 }
 /*Hover*/
 .tabBarItem-MeqDhW:hover {
   padding: 10px !important;
   margin-right: 0px;
   color: var(--Secondary-Color) !important;
+  padding: 5px 10px 5px 10px;
 }
 /*Selected*/
 .top-K_jibn .item-3XjbnG[aria-selected=true] {
@@ -1581,7 +1842,8 @@ $$ |  $$ |$$\   $$ |$$ |      $$ |  $$ |      $$\   $$ |$$ |         $$ |      $
   box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
   text-decoration: none !important;
   color: var(--Main-Color);
-  padding: 5px 10px 5px 10px;
+  padding-right: 10px !important;
+  margin-right: 10px !important;
 }
 .tabBar-2hXqzU, .tabBarItem-30Te4- {
   padding: 10px;
@@ -1591,12 +1853,43 @@ $$ |  $$ |$$\   $$ |$$ |      $$ |  $$ |      $$\   $$ |$$ |         $$ |      $
   padding: 10px !important;
   margin-right: 0px;
 }
+/*"Example button" color*/
+.buttonColor-1u-3JF {
+  background-color: black;
+  border-radius: 15px;
+  border: 1px var(--Main-Color) solid;
+}
+.buttonColor-1u-3JF:hover {
+  background-color: black;
+  border-radius: 15px;
+  border-color: rgb(var(--Neon-Rgb)) !important;
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
+}
+
+/*User probile pag layout*/
+.sectionsContainer-3BlPu4 {
+  max-width: 400px !important;
+  max-height: 540px !important;
+}
+
+/*Avatar decoration card background*/
+.limitedBackground-2ogRHb, .limitedFeatureBorder-hpm0GQ {
+  background-color: var(--Black);
+  border-color: var(--Black) !important;
+}
 
 /*Preview banners*/
 .profileBannerPreview-3mLIdO {
   background-color: black;
   border-color: rgb(var(--Neon-Rgb)) !important;
   box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
+}
+.bannerSVGWrapper-qc0szY {
+  max-width: 342px !important;
+}
+.overlayBackground-1KgwVi {
+  background-color: transparent !important;
+  background: transparent !important;
 }
 
 /*Nitro tab profile view*/
@@ -1607,6 +1900,15 @@ $$ |  $$ |$$\   $$ |$$ |      $$ |  $$ |      $$\   $$ |$$ |         $$ |      $
   border-color: rgb(var(--Neon-Rgb)) !important;
   box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
   background: black;
+}
+.background-3N0xBT {
+  background: transparent;
+  border-radius: 15px;
+}
+.premiumFeatureBorder-3vL7bn {
+  background: black !important;
+  border: 1px solid var(--Main-Color) !important;
+  border-radius: 15px;
 }
 
 /*Banner color, Color picker popout*/
@@ -1622,7 +1924,6 @@ $$ |  $$ |$$\   $$ |$$ |      $$ |  $$ |      $$\   $$ |$$ |         $$ |      $
 .bioTextArea-dDGOeC {
   width: unset;
   background-color: transparent;
-  --channel-text-area-placeholder: var(--input-placeholder-text);
   border-color: rgb(var(--Neon-Rgb));
   box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb));
 }
@@ -1702,24 +2003,11 @@ $$ |  $$ |$$\   $$ |$$ |      $$ |  $$ |      $$\   $$ |$$ |         $$ |      $
 
 /*Display on profile text color*/
 .text-sm-bold-1Dtt0R, .text-sm-semibold-3TWn25 {
-  font-family: var(--font-primary);
-  font-size: 14px;
-  line-height: 18px;
   color: var(--Secondary-Color) !important;
 }
 
 /*Connected accounts name color*/
 .connectionAccountLabelContainer-1KuLS6 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   color: var(--Main-Color);
 }
 
@@ -1731,6 +2019,46 @@ $$ |  $$ |$$\   $$ |$$ |      $$ |  $$ |      $$\   $$ |$$ |         $$ |      $
 
 /*#################### Billing settings ####################*/
 /*#################### Nitro tab ####################*/
+
+/*Unleash more fun with nitro card*/
+.settingsContainer-36qZZ9 {
+  background: black;
+  border-color: rgb(var(--Neon-Rgb)) !important;
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
+}
+/*Stars colors*/
+.sparkleStar-J6zUP3 {
+  color: var(--Main-Color);
+}
+/*"Plan starts at..." text color*/
+.description-2_tPhd {
+  color: var(--Main-Color) !important;
+}
+
+/*Nitro classic card*/
+/*background*/
+.tier0-17mYUd {
+  background-image: none;
+  background-color: black;
+  background: black;
+}
+/*Nitro basic text color*/
+.tier0LogoContainer-cNnIFm {
+  color: var(--Main-Color);
+}
+
+/*New nitro cards backgrounds*/
+.ctaWrapperTier2-1hk2M8, .ctaWrapperTier0-1GlgHE {
+  background-image: none !important;
+  background-color: var(--Black) !important;
+}
+
+/*Nitro tier text colors*/
+.tier0CtaLogoContainer-1tt-UU, .ctaLogo-hfS4Fj {
+  color: var(--Main-Color) !important;
+}
+
+/*Limited time holiday card background color*/
 
 /*Nitro card (Make discord yours)*/
 .hero-1aNo0v {
@@ -1751,7 +2079,6 @@ $$ |  $$ |$$\   $$ |$$ |      $$ |  $$ |      $$\   $$ |$$ |         $$ |      $
 .marketingRefreshTitle-UaHKpk {
   color: var(--Main-Color);
   font-size: 24px;
-  font-weight: 600;
   line-height: 30px;
   margin-bottom: 8px;
   margin-top: 0;
@@ -1823,7 +2150,11 @@ $$ |  $$ |$$\   $$ |$$ |      $$ |  $$ |      $$\   $$ |$$ |         $$ |      $
 /*#################### Gift inventory ####################*/
 /*"Reedem codes" text area input*/
 .input-2g-os5 {
-  color: var(--Main-Color);
+  color: var(--Main-Color) !important;
+  background-color: transparent;
+}
+.input-2g-os5:hover {
+  color: var(--Main-Color) !important;
   background-color: transparent;
 }
 
@@ -1871,16 +2202,9 @@ $$ |  $$ |$$\   $$ |$$ |      $$ |  $$ |      $$\   $$ |$$ |         $$ |      $
 
 /*Grabbers*/
 .grabber-2GQyvM {
-  width: 10px;
-  height: 24px;
-  margin-left: -5px;
-  top: 50%;
-  margin-top: -13px;
   border-radius: 3px;
   background-color: var(--Third-Color);
   border-color: var(--Main-Color);
-  box-shadow: none;
-  cursor: ew-resize;
 }
 
 /*#################### Accesibility ####################*/
@@ -1905,11 +2229,6 @@ $$ |  $$ |$$\   $$ |$$ |      $$ |  $$ |      $$\   $$ |$$ |         $$ |      $
 /*Keybinds are disabled... text message*/
 .text-2iTkaw {
   margin-left: 10px;
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  -ms-flex-item-align: center;
-  align-self: center;
   color: var(--Secondary-Color);
 }
 
@@ -1917,13 +2236,6 @@ $$ |  $$ |$$\   $$ |$$ |      $$ |  $$ |      $$\   $$ |$$ |         $$ |      $
 .key-N5VmHN {
   background-color: var(--background-accent);
   border: 1px solid var(--background-primary);
-  display: block;
-  padding: 3px 6px 4px;
-  border-radius: 4px;
-  cursor: default;
-  min-width: 14px;
-  min-height: 14px;
-  text-align: center;
   color: var(--Main-Color) !important;
 }
 .key-N5VmHN .bindArrow-EmK4SC {
@@ -1985,15 +2297,6 @@ $$ |  $$ |$$\   $$ |$$ |      $$ |  $$ |      $$\   $$ |$$ |         $$ |      $
 
 /*Last played game text color*/
 .hoverRoll-2XwpoF {
-  display: inline-block;
-  vertical-align: top;
-  cursor: default;
-  text-align: left;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  position: relative;
-  width: 100%;
-  contain: paint;
   color: var(--Secondary-Color);
 }
 
@@ -2006,60 +2309,26 @@ $$ |  $$ |$$\   $$ |$$ |      $$ |  $$ |      $$\   $$ |$$ |         $$ |      $
 /*#################### Game overlay ####################*/
 /*Overlay notifications, notification positions cards background and colors*/
 .wrapper-SdcMKg {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  position: relative;
-  background-color: hsla(0,calc(var(--saturation-factor, 1)*0%),0%,.1);
-  padding-bottom: 56.25%;
-  border-radius: 8px;
+  border-radius: 9px;
   border-color: rgb(var(--Neon-Rgb)) !important;
   box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
 }
 /*Selected overlay position*/
 .selected-18Wszc.option-1QI4c9 {
   background-color: var(--Main-Color);
-  border-color: var(--brand-experiment);
-  -webkit-box-shadow: 0 2px 0 hsla(0,calc(var(--saturation-factor, 1)*0%),0%,.3);
-  box-shadow: 0 2px 0 hsla(0,calc(var(--saturation-factor, 1)*0%),0%,.3);
-  opacity: 1;
 }
 /*Overlay position*/
 /*Static*/
 .option-1QI4c9 {
-  position: absolute;
-  width: 24%;
-  height: 24%;
-  margin: 6px;
-  border-radius: 3px;
-  opacity: .6;
   background-color: var(--Third-Color);
-  cursor: pointer;
-  overflow: hidden;
-  text-indent: -999em;
-  font-size: 0;
-  line-height: 0;
 }
 /*Hover*/
 .option-1QI4c9:hover {
-  position: absolute;
-  width: 24%;
-  height: 24%;
-  margin: 6px;
-  border-radius: 3px;
-  opacity: .6;
   background-color: var(--Secondary-Color);
-  cursor: pointer;
-  overflow: hidden;
-  text-indent: -999em;
-  font-size: 0;
-  line-height: 0;
 }
 
 /*Disabled icon color*/
 .disabledIcon-1rpL82 {
-  display: block;
-  width: 100%;
-  height: 100%;
   color: var(--Third-Color);
 }
 
@@ -2068,57 +2337,55 @@ $$ |  $$ |$$\   $$ |$$ |      $$ |  $$ |      $$\   $$ |$$ |         $$ |      $
 /*Settings titles colors*/
 .bd-settings-title {
   color: var(--Main-Color) !important;
-  font-weight: 600;
-  cursor: default;
-  flex: 1;
 }
-
+/*Lines color*/
+.bd-settings-group.collapsible .bd-settings-title::before {
+  background-color: var(--Color-5);
+}
 /*All category titles colors*/
 .bd-setting-header label {
-  font-weight: 500;
-  cursor: pointer;
-  overflow: hidden;
-  word-wrap: break-word;
-  font-size: 16px;
-  line-height: 24px;
   color: var(--Secondary-Color);
 }
 /*All descriptions for sub categoryes colors*/
 .bd-setting-note {
   color: var(--Third-Color);
-  margin-top: 4px;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 400;
+}
+
+/*All lists/popouts and inputs backgrounds*/
+.bd-select, .bd-number-input {
+  background-color: var(--Color-5);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+/*Popouts*/
+.bd-select .bd-select-options {
+  background-color: black;
+  color: var(--Third-Color);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.bd-select-option:hover {
+  background-color: var(--Color-5) !important;
+  border-radius: 12px;
+}
+
+/*Arrow dropdowns*/
+.bd-settings-group.collapsible .bd-settings-title::after {
+  background-color: var(--Main-Color);
 }
 
 /*Sliders (turn on/off things) colors*/ 
 .bd-switch input {
-  position: absolute;
-  z-index: 1;
-  opacity: 0;
-  margin: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 100px;
-  cursor: pointer;
+  transition: none;
   color: var(--Main-Color) !important;
 }
 .bd-switch {
-  position: relative;
-  transition: 250ms cubic-bezier(0,.3,.7,1) filter,250ms cubic-bezier(0,.3,.7,1) opacity;
+  transition: none;
   color: var(--Main-Color) !important;
 }
 .bd-switch-body {
-  --switch-color: var(--Main-Color);
-  --symbol1path: path('M5.13231 6.72963L6.7233 5.13864L14.855 13.2704L13.264 14.8614L5.13231 6.72963Z');
-  --symbol2path: path('M13.2704 5.13864L14.8614 6.72963L6.72963 14.8614L5.13864 13.2704L13.2704 5.13864Z');
-  border-radius: 14px;
-  width: 40px;
-  height: 24px;
+  transition: none;
   background-color: var(--Secondary-Color);
-  transition: 250ms cubic-bezier(0,.3,.7,1) background-color;
-  position: relative;
 }
 
 /*#################### Updates ####################*/
@@ -2129,7 +2396,7 @@ $$ |  $$ |$$\   $$ |$$ |      $$ |  $$ |      $$\   $$ |$$ |         $$ |      $
   color: var(--Main-Color);
   border-radius: 15px;
   padding: 4px 8px;
-  transition: background-color .17s ease,color .17s ease,opacity 250ms ease;
+  transition: none;
   border: 1px var(--Main-Color) solid;
 }
 /*Hover*/
@@ -2142,6 +2409,17 @@ $$ |  $$ |$$\   $$ |$$ |      $$ |  $$ |      $$\   $$ |$$ |         $$ |      $
   box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
 }
 
+/*Icon checkmark color*/
+.bd-filled-checkmark, .bd-empty-updates svg {
+  background-color: var(--Color-5);
+  border-radius: 15px;
+}
+
+/*Updates status description*/
+.bd-empty-updates {
+  color: var(--Main-Color);
+}
+
 /*BD-addon list, disease theme script fix transparent background*/
 .bd-addon-card:hover .bd-description-wrap, .bd-addon-card:hover {
   background-color: black;
@@ -2152,6 +2430,59 @@ $$ |  $$ |$$\   $$ |$$ |      $$ |  $$ |      $$\   $$ |$$ |         $$ |      $
 .bd-addon-list .bd-description {
   color: var(--Secondary-Color);
 }
+
+/*#################### Custom Css ####################*/
+/*Header color*/
+#bd-editor-controls {
+  background-color: black;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+/*################### Plugins & Themes ###################*/
+/*Sort by: & Order: text colors*/
+.bd-select-wrapper label {
+  color: var(--Main-Color);
+}
+
+/*Selected things (name / ascendending)*/
+.bd-select-value {
+  color: var(--Secondary-Color);
+}
+
+/*Buttons List/Grid View*/
+.bd-addon-views .bd-view-button.selected {
+  background-color: var(--Color-6);
+  border: none !important;
+}
+.bd-addon-views .bd-view-button {
+  border: none !important;
+}
+
+/*Themes and plugins names colors*/
+.bd-name {
+  color: var(--Main-Color);
+}
+
+/*#################### HypeSquad tab ####################*/
+/*"You're exited about..." text color*/
+.defaultColor-24IHKz {
+  color: var(--Secondary-Color);
+}
+
+/*Perks of being hype, titles & descriptions colors*/
+.title-2pQsrN {
+  color: var(--Main-Color);
+}
+.description-22Sl9U {
+  color: var(--Secondary-Color);
+}
+
+/*"Intereseted in repping..." text color from the bottom of the page*/
+.attendeeCTA-2etnq5 {
+  color: var(--Main-Color);
+}
+
 /*
  $$$$$$\  $$$$$$$$\ $$$$$$$\  $$\    $$\ $$$$$$$$\ $$$$$$$\         $$$$$$\  $$$$$$$$\ $$$$$$$$\ $$$$$$$$\ $$$$$$\ $$\   $$\  $$$$$$\   $$$$$$\  
 $$  __$$\ $$  _____|$$  __$$\ $$ |   $$ |$$  _____|$$  __$$\       $$  __$$\ $$  _____|\__$$  __|\__$$  __|\_$$  _|$$$\  $$ |$$  __$$\ $$  __$$\ 
@@ -2173,12 +2504,17 @@ $$\   $$ |$$ |      $$ |  $$ |  \$$$  /  $$ |      $$ |  $$ |      $$\   $$ |$$ 
 }
 /*Hover*/
 .brand-3g5E0C.item-3XjbnG, .themed-2-lozF.item-3XjbnG:hover {
-  background-color: transparent;
   color: var(--Secondary-Color);
+  background-color: var(--Color-5) !important;
+  border-radius: 15px;
+  padding-right: 10px !important;
+  margin-right: 10px !important;
 }
 /*When sub-category selected > border and color*/
 .brand-3g5E0C.item-3XjbnG, .themed-2-lozF.item-3XjbnG[aria-selected=true] {
   color: var(--Main-Color);
+  background-color: var(--Color-6) !important;
+  border-radius: 15px;
 }
 
 /*Server boost status color text and background*/
@@ -2351,12 +2687,16 @@ $$\   $$ |$$ |      $$ |  $$ |  \$$$  /  $$ |      $$ |  $$ |      $$\   $$ |$$ 
 .roleRow-230vCm {
   border-radius: 15px;
   margin: 5px;
-  border: 1px var(--Main-Color) solid;
 }
 /*Hover*/
 .roleRow-230vCm:hover {
-  border-color: rgb(var(--Neon-Rgb)) !important;
-  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
+  background-color: var(--Color-5) !important;
+}
+
+/*Roles cards hover*/
+.container-1zDvAE:hover {
+  background-color: var(--Color-5);
+  border-radius: 12px;
 }
 
 /*Roles cards > members count > icon color*/
@@ -2453,21 +2793,20 @@ $$\   $$ |$$ |      $$ |  $$ |  \$$$  /  $$ |      $$ |  $$ |      $$\   $$ |$$ 
 /*Hover*/
 .row-LoqnA5:hover {
   color: var(--Main-Color);
-  border: 1px var(--Main-Color) solid;
+  background-color: var(--Color-5) !important;
   border-radius: 15px;
 }
 /*Selected*/
 .row-LoqnA5[aria-selected=true] {
   color: var(--Main-Color);
   border-radius: 15px;
-  border-color: rgb(var(--Neon-Rgb)) !important;
-  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
+  background-color: var(--Color-6) !important;
 }
 
 /*Edit role container*/
 .header-JUTO-g {
   background-color: black;
-  height: 240px;
+  height: 290px;
   margin-top: 60px;
   border-radius: 15px;
   border-color: rgb(var(--Neon-Rgb)) !important;
@@ -2485,6 +2824,7 @@ $$\   $$ |$$ |      $$ |  $$ |  \$$$  /  $$ |      $$ |  $$ |      $$\   $$ |$$ 
   height: 60px;
   margin: 5px !important;
   margin-left: 15px;
+  border-bottom: 0px !important;
 }
 /*Display, permissions, manage members colors and margins fix*/
 /*Stable*/
@@ -2502,8 +2842,8 @@ $$\   $$ |$$ |      $$ |  $$ |  \$$$  /  $$ |      $$ |  $$ |      $$\   $$ |$$ 
 }
 /*Selected*/
 .tabBarItem-3nPo4Z[aria-selected=true] {
-  padding: 19px 10px 10px 10px !important;
-  margin: 0px 20px 0px 20px !important;
+  padding-right: 10px !important;
+  margin-right: 10px !important;
 }
 
 /*Edit role > Options menu (The 3 dots) color*/
@@ -2514,12 +2854,13 @@ $$\   $$ |$$ |      $$ |  $$ |  \$$$  /  $$ |      $$ |  $$ |      $$\   $$ |$$ 
 /*Role icon > Choose image button*/
 /*Normal*/
 .lookOutlined-3yKVGo.colorWhite-1H92hK {
-  color: var(--Main-Color);
+  color: var(--Main-Color) !important;
+  border-color: var(--Main-Color) !important;
   border: 1px var(--Main-Color) solid;
   border-radius: 15px;
 }
 .lookOutlined-3yKVGo.colorWhite-1H92hK:hover {
-  color: var(--Secondary-Color);
+  color: var(--Secondary-Color) !important;
   border-color: rgb(var(--Neon-Rgb)) !important;
   box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
 }
@@ -2574,6 +2915,11 @@ $$\   $$ |$$ |      $$ |  $$ |  \$$$  /  $$ |      $$ |  $$ |      $$\   $$ |$$ 
 .removeButton-JGNeoQ:hover {
   color: var(--Main-Color);
 }
+/* #################### Roles tab #################### */
+.theme-dark .emojiAliasInput-3ZhdKx .emojiInput-B8MGXq, .theme-dark .emojiAliasInput-3ZhdKx .emojiInput-B8MGXq:hover {
+  color: rgba(255, 255, 255, 0) !important;
+  background-color: transparent !important;
+}
 
 /* #################### Stickers tab #################### */
 
@@ -2596,8 +2942,7 @@ $$\   $$ |$$ |      $$ |  $$ |  \$$$  /  $$ |      $$ |  $$ |      $$\   $$ |$$ 
 /*normal*/
 .lookFilled-yCfaCM.colorWhite-1H92hK {
   background-color: transparent;
-  border-color: rgb(var(--Neon-Rgb));
-  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb));
+  border: 1px solid var(--Main-Color);
 }
 /*hover*/
 .lookFilled-yCfaCM.colorWhite-1H92hK:hover {
@@ -2623,7 +2968,8 @@ $$\   $$ |$$ |      $$ |  $$ |  \$$$  /  $$ |      $$ |  $$ |      $$\   $$ |$$ 
 /*All tiers headers*/
 .theme-dark .tierHeaderLocked-30MLlO, .theme-dark .tierHeaderUnlocked-1OpOLf {
   background-color: black !important;
-  border-radius: 15px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
 /*Buy level buttons*/
@@ -2645,10 +2991,21 @@ $$\   $$ |$$ |      $$ |  $$ |  \$$$  /  $$ |      $$ |  $$ |      $$\   $$ |$$ 
 .theme-dark .tierHeaderLocked-30MLlO {
   background-color: transparent;
 }
+.tierHeaderWithoutCardBody-1iT8o_ {
+  margin-bottom: 0px;
+}
+/*Middle*/
+.grid-5BH14o {
+  background-color: black;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
 
 /*Second tier body (middle)*/
 .theme-dark .tierBody-1d3UiS {
-  background-color: transparent;
+  background-color: black;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 /*"Boost server & Learn more" buttons colors*/
@@ -2697,6 +3054,19 @@ $$\   $$ |$$ |      $$ |  $$ |  \$$$  /  $$ |      $$ |  $$ |      $$\   $$ |$$ 
 .icon-3TvnqF, .detailsIcon-2NtTO9 {
   color: var(--Main-Color);
 }
+/*Bots and apps*/
+/*Headers text colors*/
+.defaultColor-1GKx81 {
+  color: var(--Main-Color) !important;
+}
+/*Banner description*/
+.permissionV3BannerDescription-_RTKq- {
+  color: var(--Secondary-Color);
+}
+/*Icons bot colors*/
+.featureIcon-3rvFkz {
+  color: var(--Secondary-Color);
+}
 
 /*#################### Safety setup tab ####################*/
 
@@ -2704,10 +3074,6 @@ $$\   $$ |$$ |      $$ |  $$ |  \$$$  /  $$ |      $$ |  $$ |      $$\   $$ |$$ 
 /*Filter by user, filter by action padding fix*/
 .quickSelect-i8mQq1 {
   padding-right: 50px;
-}
-/*Exit button padding*/
-.container-O54IuJ {
-  padding-left: 60px;
 }
 
 /*Audit log containers*/
@@ -2738,6 +3104,32 @@ $$\   $$ |$$ |      $$ |  $$ |  \$$$  /  $$ |      $$ |  $$ |      $$\   $$ |$$ 
 /*#################### Bans tab ####################*/
 
 /* #################### Community tab #################### */
+/*Page layout fix*/
+.container-2CHEay {
+  min-height: 1550px !important;
+}
+.banner-3-oqyl {
+  height: 356px;
+}
+
+/*Server insights text color and icon color*/
+.text-dIcRfJ, .icon-2iwvYS {
+  color: var(--Main-Color);
+}
+
+/*Welcome screen read the rules & read info text color*/
+.text-md-semibold-3xVVGu {
+  color: var(--Main-Color) !important;
+}
+/*icon colors*/
+.channelTitleIcon-3BTw9v {
+  color: var(--Secondary-Color);
+}
+
+/*Server name color*/
+.welcomeTitle-13oDgb strong {
+  color: var(--Main-Color);
+}
 
 /* #################### Server boost status tab #################### */
 /*Nitro card below*/
@@ -2747,6 +3139,11 @@ $$\   $$ |$$ |      $$ |  $$ |  \$$$  /  $$ |      $$ |  $$ |      $$\   $$ |$$ 
 }
 /*Nitro title, icons colors*/
 .tier2Title-8gwAVr, .icon-2iprHa {
+  color: var(--Main-Color);
+}
+
+/*All percs text color*/
+.perkText-3nOGp0, .previousPerks-2h1eyr {
   color: var(--Main-Color);
 }
 
@@ -2816,6 +3213,63 @@ $$\   $$ |$$ |      $$ |  $$ |  \$$$  /  $$ |      $$ |  $$ |      $$\   $$ |$$ 
   box-shadow: inset 0px 0px 1px 1px rgb(var(--Neon-Rgb2)), 0px 0px 15px 1px rgb(var(--Neon-Rgb2)) !important;
 }
 
+/*#################### App directory tab ####################*/
+/*Background*/
+.theme-dark .directoryModal-YJsOMv {
+  background-color: black;
+}
+
+/*Discord logo color*/
+.logo-ScFp2k {
+  color: var(--Main-Color);
+}
+
+/*Category icons colors*/
+.icon-3xkfFv {
+  color: var(--Main-Color);
+}
+
+/*All containers*/
+.textContainer-TzRfgH {
+  color: var(--Main-Color);
+  border-radius: 15px;
+  border: 1px var(--Main-Color) solid;
+}
+
+/*After clicking a random app > overview text color*/
+.detailedDescription-no5P98 {
+  color: var(--Main-Color) !important;
+}
+/*Show more/less text and icon color*/
+.showMoreButtonText-1jnEQf, .showMoreButtonIcon-3D4iRn {
+  color: var(--Third-Color);
+}
+
+/*Other icon colors*/
+.defaultIcon-27uYKL, .listIcon-1_fckz {
+  color: var(--Main-Color);
+}
+
+/*Command text color*/
+.commandName-SDgdgz {
+  color: var(--Third-Color) !important;
+}
+
+/*Utility tab icons colors*/
+.icon-14PytS {
+  color: var(--Main-Color) !important;
+}
+
+/*Back icon color*/
+/*Stable*/
+.backHeader-2Yfz4X, .backIcon-3OYRTx {
+  color: var(--Secondary-Color);
+}
+/*Hover*/
+.backHeader-2Yfz4X:hover, .backIcon-3OYRTx:hover, .back-1RLxsC:hover {
+  color: var(--Main-Color) !important;
+}
+
 /*
  $$$$$$\  $$\   $$\ $$$$$$\ $$\       $$$$$$$\   $$$$$$\  
 $$  __$$\ $$ |  $$ |\_$$  _|$$ |      $$  __$$\ $$  __$$\ 
@@ -2826,9 +3280,157 @@ $$ |  $$ |$$ |  $$ |  $$ |  $$ |      $$ |  $$ |$$\   $$ |
 \$$$$$$  |\$$$$$$  |$$$$$$\ $$$$$$$$\ $$$$$$$  |\$$$$$$  |
  \______/  \______/ \______|\________|\_______/  \______/ 
 */
+
+/*User popout (update 25.10.2022)*/
+/*The master one*/
+.userPopoutOuter-3AVBmJ {
+  background-color: black;
+  border-color: rgb(var(--Neon-Rgb)) !important;
+  box-shadow: inset 0px 0px 1px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 1px rgb(var(--Neon-Rgb)) !important;
+}
+/*The premium/nonpremium one*/
+.userProfileInnerNonPremium-1XjSjn, .userProfileInnerWithBanner-3CJ1Og, .userProfileInnerThemedNonPremium-1gT-zY {
+  background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.6)) , var(--loop-gif2) 50% 50%/cover !important;
+}
+/*Tag color and name fix*/
+.username-28Thtk, .discriminator-3_S3CG {
+  color: var(--Main-Color);
+}
+.discrimBase-KriZSj {
+  color: var(--Main-Color);
+}
+
+/*Memberlist*/
+.member-2gU6Ar {
+  background-color: transparent;
+}
+.member-2gU6Ar:hover {
+  border-radius: 15px;
+  background-color: var(--Color-5);
+}
+.member-2gU6Ar[aria-selected=true] {
+  border-radius: 15px;
+  background-color: var(--Color-6);
+}
+
+/*Edit profile (new fix 04/11/2022) icon*/
+.pencilIcon-1MUmnO {
+  color: var(--Main-Color);
+}
+/*After clicking the icon, server/profile user settings, the description color*/
+.colorDefault-CDqZdO .subtext-2GlkbE {
+  color: var(--Secondary-Color);
+}
+
+/*Border role color no nitro no themed*/
+.rolePill-2IJ1vo {
+  color: var(--Secondary-Color);
+  border-color: var(--Third-Color);
+  border-radius: 15px;
+  border: 1.7px solid;
+  font-size: 12px;
+}
+/*Border and role text color nitro themed*/
+.rolePillBorder-RiRiuN {
+  color: var(--Secondary-Color);
+  border-color: var(--Third-Color);
+  border-radius: 15px;
+}
+
+/*Actions buttons (update 25.10.2022)*/
+/*On popout*/
+.buttonColor-XIRMbp {
+  color: var(--Secondary-Color);
+  background-color: transparent;
+  border-radius: 15px;
+  border: 1px var(--Main-Color) solid;
+}
+.buttonColor-XIRMbp:hover {
+  color: var(--Main-Color);
+  background-color: transparent;
+  border-radius: 15px;
+  border-color: rgb(var(--Neon-Rgb)) !important;
+  box-shadow: inset 0px 0px 1px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 1px rgb(var(--Neon-Rgb)) !important;
+}
+/*When viewing user profile popout actions button color (update 25.10.2022)*/
+.actionColor-3JIzOn {
+  color: var(--Secondary-Color);
+  background-color: transparent;
+  border-radius: 15px;
+  border: 1px var(--Main-Color) solid;
+}
+.actionColor-3JIzOn:hover {
+  color: var(--Main-Color);
+  background-color: transparent;
+  border-radius: 15px;
+  border-color: rgb(var(--Neon-Rgb)) !important;
+  box-shadow: inset 0px 0px 1px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 1px rgb(var(--Neon-Rgb)) !important;
+}
+
+/*Dropdown arrow color after server name*/
+.button-2BMPJJ {
+  color: var(--Main-Color);
+}
+
+/*Home tab*/
+.theme-dark .background-fkKrXt {
+  background-color: transparent;
+}
+
+/*Server name and info, active now border*/
+.container-2Hi7Km, .container-xwOzwi {
+  border-color: rgb(var(--Neon-Rgb)) !important;
+  box-shadow: inset 0px 0px 1px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 1px rgb(var(--Neon-Rgb)) !important;
+}
+
+/*Content*/
+.container-Jqlbgl {
+  background-color: black;
+  border-radius: 15px;
+  border-color: rgb(var(--Neon-Rgb)) !important;
+  box-shadow: inset 0px 0px 1px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 1px rgb(var(--Neon-Rgb)) !important;
+}
+
+/*Create a guild user popout*/
+.container-1Lk8p7 {
+  background-color: transparent;
+  color: var(--Main-Color);
+}
+.root-g14mjS {
+  border-radius: 15px;
+  border-color: rgb(var(--Neon-Rgb)) !important;
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
+  background-color: black !important;
+}
+.header-1c1AhF, .content-2hZxGK, .footer-31IekZ {
+  background-color: transparent !important;
+}
+/*Footer separator*/
+.theme-light .footerSeparator-VzAYwb {
+  box-shadow: none !important;
+}
+/*Contents, what u want to create*/
+/*Stable*/
+.container-x8Y1ix {
+  background-color: black;
+  border: 1px var(--Main-Color) solid;
+}
+/*Hover*/
+.container-x8Y1ix:hover {
+  background-color: black;
+  border-color: rgb(var(--Neon-Rgb)) !important;
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
+}
+
+/*"Start from a template" text color*/
+.text-xs-bold-1NF1lz, .optionHeader-27AHfD {
+  color: var(--Main-Color) !important;
+}
+
 /*User popout*/
 .userPopout-2j1gM4 {
   background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.6)) , var(--loop-gif2) 50% 50%/cover !important;
+  background-color: black !important;
   border-radius: 15px;
   padding: 5px;
   border-color: rgb(var(--Neon-Rgb)) !important;
@@ -2870,7 +3472,7 @@ $$ |  $$ |$$ |  $$ |  $$ |  $$ |      $$ |  $$ |$$\   $$ |
 }
 /*Metioned*/
 .mention-3XBnnZ {
-  background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.2)) , var(--loop-gif4) 50% 50%/cover !important;
+  background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.2)) , var(--loop-gif3) 50% 50%/cover !important;
   opacity: .9;
   border: solid 2px var(--Secondary-Color);
   border-radius: 15px; 
@@ -2882,7 +3484,6 @@ $$ |  $$ |$$ |  $$ |  $$ |  $$ |      $$ |  $$ |$$\   $$ |
   top: 0px;
   left: 9.5px;
   bottom: 0px;
-  width: 50px;
   border-radius: 20px;
   background: var(--Black);
   border: solid 2px var(--Secondary-Color);
@@ -2906,30 +3507,16 @@ $$ |  $$ |$$ |  $$ |  $$ |  $$ |      $$ |  $$ |$$\   $$ |
 /*Guild Roles*/
 /*Default permissions*/
 .container-_phMUq {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   background-color: transparent;
   color: var(--Main-Color);
   border-radius: 0px;
   padding: 16px 24px 16px 16px;
-  cursor: pointer;
 }
 .container-_phMUq:hover {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   background-color: var(--Black-Color);
   color: var(--Main-Color);
   border-radius: 0px;
   padding: 16px 24px 16px 16px;
-  cursor: pointer;
 }
 /* Search Roles */
 .container-cMG81i {
@@ -2943,41 +3530,20 @@ $$ |  $$ |$$ |  $$ |  $$ |  $$ |      $$ |  $$ |$$\   $$ |
 }
 /*Roles margin left-right*/
 .role-2TIOKu {
-  font-size: 12px;
-  font-weight: 500;
-  background: var(--background-secondary-alt);
-  border-radius: 4px;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  height: 22px;
   margin: 0 4px 4px 0;
   padding: 4px;
   margin-right: 200px;
 }
 /*Roles card in guilds*/
 .userPopout-2j1gM4 {
-  -webkit-box-shadow: var(--elevation-high);
-  box-shadow: var(--elevation-high);
-  background-color: var(--background-floating);
   border-radius: 8px;
   border-color: var(--Main-Color);
   overflow: hidden;
-  max-height: calc(100vh - 20px);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
 }
 /*+ add roles popout*/
 .container-2O1UgZ {
   width: 250px;
   overflow: hidden;
-  border-radius: 4px;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
   padding: 8px;
   background-color: var(--Black);
   border: var(--border1);
@@ -2985,7 +3551,10 @@ $$ |  $$ |$$ |  $$ |  $$ |  $$ |      $$ |  $$ |$$\   $$ |
 
 /*Unread message bar "X+ new messages since XX:XXPM/AM" color and background*/
 .newMessagesBar-1hF-9G {
-  border: var(--border1);
+  border: 1px solid var(--Main-Color);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-top: transparent;
   background: black !important;
 }
 
@@ -3034,10 +3603,6 @@ $$ |  $$ |$$ |  $$ |  $$ |  $$ |      $$ |  $$ |$$\   $$ |
 }
 /*Text Color*/
 .text-sm-medium-3Pz3rB, .text-sm-normal-3Zj3Iv {
-  font-family: var(--font-primary);
-  font-weight: 1000;
-  font-size: 14px;
-  line-height: 18px;
   color: var(--Secondary-Color) !important;
 }
 
@@ -3053,13 +3618,14 @@ $$ |  $$ |$$ |  $$ |  $$ |  $$ |      $$ |  $$ |$$\   $$ |
 .lookInverted-2mDUMi.colorBrand-I6CyqQ {
   color: var(--Secondary-Color);
   background-color: transparent;
-  border-color: rgb(var(--Neon-Rgb)) !important;
-  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
+  border: 1px solid var(--Main-Color);
+  border-radius: 15px;
 }
 /*hover*/
 .lookInverted-2mDUMi.colorBrand-I6CyqQ:hover {
   color: var(--Main-Color);
   background-color: transparent;
+  border-radius: 15px;
   border-color: rgb(var(--Neon-Rgb)) !important;
   box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
 }
@@ -3088,12 +3654,13 @@ $$ |  $$ |$$ |  $$ |  $$ |  $$ |      $$ |  $$ |$$\   $$ |
 
 /*Emoji button color*/
 .emojiButton-3FRTuj:not(:hover)>div>.sprite-2lxwfc{
-  filter: invert(22%) sepia(91%) saturate(3877%) hue-rotate(310deg) brightness(107%) contrast(100%) !important;
+  filter: invert(11%) sepia(98%) saturate(6887%) hue-rotate(284deg) brightness(65%) contrast(111%) !important;
 }
 
 /*System messages channel disabled messages*/
 .title-2dsDLn {
-  color: var(--Secondary-Color);
+  color: var(--Main-Color);
+  padding-left: 5px;
 }
 
 /*Default notification settings, circle buttons*/
@@ -3103,6 +3670,27 @@ $$ |  $$ |$$ |  $$ |  $$ |  $$ |      $$ |  $$ |$$\   $$ |
 /*"All messages", "Only @mentions" text color*/
 .title-1yyp9V {
   color: var(--Secondary-Color);
+}
+
+/*The video and play on spotify buttons when hovering over a channel fix*/
+.button-1Ofqs0 {
+  border: 2px var(--Main-Color) solid;
+  border-radius: 15px;
+}
+/*Song name color*/
+.headerLink-1hmZgL {
+  color: var(--Main-Color);
+}
+.headerLink-1hmZgL:hover {
+  color: var(--Secondary-Color);
+}
+
+/*Noise cancelation popout*/
+.noiseCancellationPopout-2-e5Xz {
+  background-color: black !important;
+  border-radius: 15px;
+  border-color: rgb(var(--Neon-Rgb)) !important;
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
 }
 
 /*
@@ -3140,6 +3728,34 @@ $$ |  $$\ $$ |  $$ |$$ |  $$ |$$ |\$$$ |$$ |\$$$ |$$ |      $$ |      $$\   $$ |
     color: var(--Main-Color);
 }
 
+/*More active threads popout of all threads in that channel*/
+.popout-TdhJ6Z {
+  background-color: black !important;
+  border-radius: 15px;
+  border-color: rgb(var(--Neon-Rgb)) !important;
+  box-shadow: inset 0px 0px 5px 1px rgb(var(--Neon-Rgb)), 0px 0px 15px 4px rgb(var(--Neon-Rgb)) !important;
+}
+/*Hovering on threads list*/
+.row-1qtctT:hover {
+  border-radius: 15px;
+  background-color: var(--Color-5);
+}
+/*See all button*/
+.more-2c3Z-T:hover {
+  text-decoration: none !important;
+  background-color: var(--Color-5);
+  border-radius: 15px;
+}
+/*Threads name in text channels*/
+/*header*/
+.name-13vPlv {
+  color: var(--Main-Color);
+}
+/*The small text preview and timestamp color*/
+.threadMessageAccessoryPreview-13YRmc, .timestamp-1VMnSc {
+  color: var(--Secondary-Color);
+}
+
 /*All in channel Icons, Threads, Notifications, Pinned messages, Hide member List, Notes*/
 /*Stable*/
 .clickable-ZD7xvu .icon-2xnN2Y {
@@ -3166,6 +3782,11 @@ $$ |  $$\ $$ |  $$ |$$ |  $$ |$$ |\$$$ |$$ |\$$$ |$$ |      $$ |      $$\   $$ |
 /*Guild Channel Slow Mode warning*/
 .base-3bcbY3 .cooldownWrapper-2k1jHK {
   color: var(--Main-Color)!important;
+}
+
+/*Channel topic color*/
+.topic-11NuQZ {
+  color: var(--Third-Color);
 }
 
 /*In guild hover on voice channel popout (playing, listening to spotify)*/
@@ -3213,13 +3834,8 @@ $$ |  $$\ $$ |  $$ |$$ |  $$ |$$ |\$$$ |$$ |\$$$ |$$ |      $$ |      $$\   $$ |
 
 /*Channel icon*/
 .emptyChannelIcon-1YdEz2 {
-  width: 68px;
-  height: 68px;
-  margin-top: 16px;
   border-radius: 50%;
-  background-color: transparent !important;
-  background-image: url(/assets/750a8ea….svg);
-  background-repeat: no-repeat;
+  background-color: var(--Color-5);
   background-position: 50%;
   color: var(--Main-Color) !important;
 }
@@ -3245,7 +3861,7 @@ $$ |  $$\ $$ |  $$ |$$ |  $$ |$$ |\$$$ |$$ |\$$$ |$$ |      $$ |      $$\   $$ |
 /*#################### Channel Permissions #########################*/
 /*Header category color*/
 .lineClamp1-1iDPU7 {
-  color: var(--Secondary-Color) !important;
+  color: var(--Main-Color) !important;
 }
 
 /*########## Permissions ##########*/
@@ -3312,6 +3928,33 @@ $$ |  $$\ $$ |  $$ |$$ |  $$ |$$ |\$$$ |$$ |\$$$ |$$ |      $$ |      $$\   $$ |
   background-color: transparent;
 }
 
+/*NSFW channel alert text color*/
+/*Header*/
+.title-FyH9jw {
+  color: var(--Main-Color) !important;
+}
+/*Description*/
+.description-fPkcPm {
+  color: var(--Secondary-Color) !important;
+}
+
+/*Browse Channels tab*/
+/*background*/
+.theme-dark .container-1um7CU {
+  background-color: transparent !important;
+}
+.theme-dark .container-2IKOsH, .theme-dark .header-3xB4vB {
+  background-color: transparent !important; 
+}
+/*headers text*/
+.text-xs-bold-1NF1lz, .text-xs-semibold-3E_l31 {
+  color: var(--Main-Color) !important;
+}
+/*follow category text color*/
+.text-xs-medium-2LRpEj {
+  color: var(--Secondary-Color) !important;
+}
+
 /*
  $$$$$$\   $$$$$$\  $$\             $$$$$$$$\ $$\   $$\ $$$$$$\ $$\   $$\  $$$$$$\   $$$$$$\  
 $$  __$$\ $$  __$$\ $$ |            \__$$  __|$$ |  $$ |\_$$  _|$$$\  $$ |$$  __$$\ $$  __$$\ 
@@ -3323,11 +3966,6 @@ $$ $$\$$ |$$ |  $$ |$$ |               $$ |   $$ |  $$ |  $$ |  $$ |\$$$ |$$ |  
  \___$$$\  \______/ \________|         \__|   \__|  \__|\______|\__|  \__| \______/  \______/ 
      \___|
 */
-/*Rounded Context Popouts (by Lonk#6942)*/
-.menu-1QACrS, .colorDefault-CDqZdO { 
-  border-radius: 15px; 
-}
-
 /*Blur spolier text instead of hiding it (by rye.#3861)*/
 .spoilerText-27bIiA,
 .spoilerText-27bIiA.hidden-3B-Rum {
@@ -3342,4 +3980,25 @@ $$ $$\$$ |$$ |  $$ |$$ |               $$ |   $$ |  $$ |  $$ |  $$ |\$$$ |$$ |  
 /*Fix for nonsense text flickering*/
 html, span:not(.spinner-item) {
   backface-visibility: hidden;
+}
+
+/*
+$$$$$$$\  $$\       $$\   $$\  $$$$$$\  $$$$$$\ $$\   $$\  $$$$$$\         $$$$$$\  $$\   $$\ $$$$$$$\  $$$$$$$\   $$$$$$\  $$$$$$$\  $$$$$$$$\ 
+$$  __$$\ $$ |      $$ |  $$ |$$  __$$\ \_$$  _|$$$\  $$ |$$  __$$\       $$  __$$\ $$ |  $$ |$$  __$$\ $$  __$$\ $$  __$$\ $$  __$$\ \__$$  __|
+$$ |  $$ |$$ |      $$ |  $$ |$$ /  \__|  $$ |  $$$$\ $$ |$$ /  \__|      $$ /  \__|$$ |  $$ |$$ |  $$ |$$ |  $$ |$$ /  $$ |$$ |  $$ |   $$ |   
+$$$$$$$  |$$ |      $$ |  $$ |$$ |$$$$\   $$ |  $$ $$\$$ |\$$$$$$\        \$$$$$$\  $$ |  $$ |$$$$$$$  |$$$$$$$  |$$ |  $$ |$$$$$$$  |   $$ |   
+$$  ____/ $$ |      $$ |  $$ |$$ |\_$$ |  $$ |  $$ \$$$$ | \____$$\        \____$$\ $$ |  $$ |$$  ____/ $$  ____/ $$ |  $$ |$$  __$$<    $$ |   
+$$ |      $$ |      $$ |  $$ |$$ |  $$ |  $$ |  $$ |\$$$ |$$\   $$ |      $$\   $$ |$$ |  $$ |$$ |      $$ |      $$ |  $$ |$$ |  $$ |   $$ |   
+$$ |      $$$$$$$$\ \$$$$$$  |\$$$$$$  |$$$$$$\ $$ | \$$ |\$$$$$$  |      \$$$$$$  |\$$$$$$  |$$ |      $$ |       $$$$$$  |$$ |  $$ |   $$ |   
+\__|      \________| \______/  \______/ \______|\__|  \__| \______/        \______/  \______/ \__|      \__|       \______/ \__|  \__|   \__|   
+*/
+/*#################### Image Utilities (DevilBro) ####################*/
+/*Image details text color */
+.imageDetails-1t6Zms > span {
+  color: var(--Main-Color);
+}
+
+/*Download image icon color*/
+.cursorPointer-B3uwDA {
+  color: var(--Main-Color);
 }
