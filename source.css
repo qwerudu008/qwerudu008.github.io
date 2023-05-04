@@ -34,7 +34,7 @@ $$ |  $$ |$$ |      $$ |  $$ |$$ |  $$ |$$ |  $$ |$$ |      $$\   $$ |
   --loop-gif2: url('https://github.com/qwerudu008/qwerudu008.github.io/blob/main/background/loop-gif2.gif?raw=true'); /*Used in guild popouts > User popout*/
   --loop-gif3: url('https://github.com/qwerudu008/qwerudu008.github.io/blob/main/background/loop-gif3.gif?raw=true'); /*Used in guild popouts > Mentioned card*/
   --loop-gif-diamond: url('https://raw.githubusercontent.com/qwerudu008/qwerudu008.github.io/main/background/AEWu%20(1).gif?raw=true'); /*Used on home icon*/
-  --logo-photo: url('https://github.com/qwerudu008/qwerudu008.github.io/blob/main/background/7FPb.gif?raw-false'); /*Used in Friends tab when no friends are online*/
+  --logo-photo: url('https://github.com/qwerudu008/qwerudu008.github.io/blob/main/background/7FPb.gif?raw-true'); /*Used in Friends tab when no friends are online*/
   /*Borders*/
   --border1: 2px solid var(--Secondary-Color); /*master border*/
   --border2: 2px solid var(--Third-Color); /*border 2*/
