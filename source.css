@@ -12,29 +12,29 @@ $$ |  $$ |$$ |      $$ |  $$ |$$ |  $$ |$$ |  $$ |$$ |      $$\   $$ |
   /*Global variables that were made/edited by me*/
   --Main-Color: rgb(129, 129, 129); /*main master color*/
   --Secondary-Color: rgb(153, 153, 153); /*secondary color*/
-  --Third-Color: rgb(99, 99, 99); /*third color*/
+  --Third-Color: rgb(79, 79, 79); /*third color*/
   --Color-4: rgb(80, 80, 80); /*color number 4*/
-  --Color-5: hsla(0, 0%, 56%, 0.366); /*color number 5*/
-  --Color-6: hsla(0, 0%, 76%, 0.466); /*color number 6*/
+  --Color-5: hsla(0, 0%, 56%, 0.781); /*color number 5*/
+  --Color-6: hsla(0, 0%, 76%, 0.845); /*color number 6*/
   --Grey-Color: rgb(31, 31, 31); /*grey color*/
-  --Black: rgb(0,0,0); /*black color*/
+  --Black: rgb(120, 120, 120); /*black color*/
   --White: rgb(255,255,255); /*white color*/
   --White-Second: rgb(175, 175, 175); /*white but gray color*/
-  --Red-color: rgb(255,0,0); /*red color*/
-  --Neon-Line: 150,0,150; /*master neon color*/
-  --Neon-Line2: 255,0,0; /*red neon line*/
+  --Red-color: rgb(138, 138, 138); /*red color*/
+  --Neon-Line: 45, 45, 45; /*master neon color*/
+  --Neon-Line2: 100, 100, 100; /*red neon line*/
   --Neon-Rgb: var(--Neon-Line); /*neon node #1*/
   --Neon-Rgb2: var(--Neon-Line2); /*red noen node #2*/
   --Cards-Background-Color: rgb(48, 48, 48);/*darker cards color*/
   /*Backgrounds*/
-  --master-background: url('https://github.com/qwerudu008/qwerudu008.github.io/blob/main/background/GZdp.gif?raw=true'); /*master background*/
+  --master-background: url('https://github.com/qwerudu008/qwerudu008.github.io/blob/main/background/d03e368e88bfbdb496a4191a006db999.jpg?raw=true'); /*master background*/
   --background-floating: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.2)) , var(--master-background)50% 50%/cover !important; /*background used in normal discord's code*/
   /*Gifs for popouts and stuff*/
-  --loop-gif: url('https://github.com/xy-nyxy/AnotherEternity/blob/main/background/loop-gif.gif?raw=true'); /*Used in files background*/
-  --loop-gif2: url('https://github.com/xy-nyxy/AnotherEternity/blob/main/background/loop-gif2.gif?raw=true'); /*Used in guild popouts > User popout*/
-  --loop-gif3: url('https://github.com/xy-nyxy/AnotherEternity/blob/main/background/loop-gif3.gif?raw=true'); /*Used in guild popouts > Mentioned card*/
-  --loop-gif-diamond: url('https://github.com/xy-nyxy/AnotherEternity/blob/main/background/loop-gif-diamond.gif?raw=true'); /*Used on home icon*/
-  --logo-photo: url('https://raw.githubusercontent.com/xy-nyxy/AnotherEternity/main/background/Wumpus%20Pink.gif'); /*Used in Friends tab when no friends are online*/
+  --loop-gif: url('https://github.com/qwerudu008/qwerudu008.github.io/blob/main/background/loop-gif.gif?raw=true'); /*Used in files background*/
+  --loop-gif2: url('https://github.com/qwerudu008/qwerudu008.github.io/blob/main/background/loop-gif2.gif?raw=true'); /*Used in guild popouts > User popout*/
+  --loop-gif3: url('https://github.com/qwerudu008/qwerudu008.github.io/blob/main/background/loop-gif3.gif?raw=true'); /*Used in guild popouts > Mentioned card*/
+  --loop-gif-diamond: url('https://raw.githubusercontent.com/qwerudu008/qwerudu008.github.io/main/background/AEWu%20(1).gif?raw=true'); /*Used on home icon*/
+  --logo-photo: url('https://github.com/qwerudu008/qwerudu008.github.io/blob/main/background/7FPb.gif?raw-false'); /*Used in Friends tab when no friends are online*/
   /*Borders*/
   --border1: 2px solid var(--Secondary-Color); /*master border*/
   --border2: 2px solid var(--Third-Color); /*border 2*/
@@ -53,8 +53,8 @@ $$ |  $$ |$$ |      $$ |  $$ |$$ |  $$ |$$ |  $$ |$$ |      $$\   $$ |
   --rs-idle-color: #faa81a;
   --rs-dnd-color: #ee0000;
   --rs-offline-color: #636b75;
-  --rs-streaming-color: #b300fa;
-  --rs-invisible-color: #747f8d;
+  --rs-streaming-color: #525252;
+  --rs-invisible-color: #120028;
   --rs-phone-color: var(--rs-online-color);
   --rs-phone-visible: none;
 }
@@ -68,10 +68,10 @@ $$ |  $$ |$$ |      $$ |  $$ |$$ |  $$ |$$ |  $$ |$$ |      $$\   $$ |
   --info-danger-foreground: transparent!important;
   --status-positive-background: transparent!important;
   --status-positive-text: #fff;
-  --status-warning-background: hsl(38,calc(var(--saturation-factor, 1)*95.7%),54.1%);
-  --status-danger-background: hsl(359,calc(var(--Secondary-Color, 1)*82.6%),59.4%);
+  --status-warning-background: hsl(38,calc(var(--saturation-factor, 1)*4.7%),54.1%);
+  --status-danger-background: hsl(359,calc(var(--Secondary-Color, 1)*5.6%),59.4%);
   --status-danger-text: var(--Main-Color);
-  --focus-primary: hsl(197,calc(var(--saturation-factor, 1)*100%),47.8%);
+  --focus-primary: hsl(197,calc(var(--saturation-factor, 1)*1%),47.8%);
 }
 .theme-dark {
   --header-primary: #8f949c;
@@ -80,10 +80,10 @@ $$ |  $$ |$$ |      $$ |  $$ |$$ |  $$ |$$ |  $$ |$$ |      $$\   $$ |
   --text-muted: #55585d;
   --text-link: var(--Main-Color);
   --text-link-low-saturation: var(--Secondary-Color);
-  --text-positive: hsl(139,calc(var(--saturation-factor, 1)*66.8%),58.6%);
-  --text-warning: hsl(38,calc(var(--saturation-factor, 1)*95.7%),54.1%);
-  --text-danger: hsl(359,calc(var(--saturation-factor, 1)*82.6%),59.4%);
-  --text-brand: hsl(235,calc(var(--saturation-factor, 1)*86.1%),77.5%);
+  --text-positive: hsl(139,calc(var(--saturation-factor, 1)*5.8%),58.6%);
+  --text-warning: hsl(38,calc(var(--saturation-factor, 1)*4.7%),54.1%);
+  --text-danger: hsl(359,calc(var(--saturation-factor, 1)*2.6%),59.4%);
+  --text-brand: hsl(235,calc(var(--saturation-factor, 1)*4.1%),77.5%);
   --interactive-normal: var(--Third-Color);
   --interactive-hover: var(--Secondary-Color);
   --interactive-active: var(--Main-Color);
@@ -119,8 +119,8 @@ $$ |  $$ |$$ |      $$ |  $$ |$$ |  $$ |$$ |  $$ |$$ |      $$\   $$ |
   --elevation-medium: 0 4px 4px rgba(0,0,0,0.16);
   --elevation-high: 0 8px 16px rgba(0,0,0,0.24);
   --logo-primary: #fff;
-  --control-brand-foreground: hsl(235,calc(var(--saturation-factor, 1)*86.1%),77.5%);
-  --control-brand-foreground-new: hsl(235,calc(var(--saturation-factor, 1)*86.1%),77.5%);
+  --control-brand-foreground: hsl(235,calc(var(--saturation-factor, 1)*22.1%),77.5%);
+  --control-brand-foreground-new: hsl(235,calc(var(--saturation-factor, 1)*22.1%),77.5%);
   --background-mentioned: transparent;
   --background-mentioned-hover: transparent;
   --background-message-hover: var(--Color-5);
@@ -149,51 +149,51 @@ $$ |  $$ |$$ |      $$ |  $$ |$$ |  $$ |$$ |  $$ |$$ |      $$\   $$ |
 
 /*Brand experminet things (idk what i did here but works)*/
 :root {
-	--brand-experiment: hsl(305, calc(var(--saturation-factor, 1)*59.9%), 44.2%);
-	--brand-experiment-100: hsl(305, calc(var(--saturation-factor, 1)*59.9%), 98%);
-	--brand-experiment-130: hsl(305, calc(var(--saturation-factor, 1)*59.9%), 93.5%);
-	--brand-experiment-160: hsl(305, calc(var(--saturation-factor, 1)*59.9%), 89%);
-	--brand-experiment-200: hsl(305, calc(var(--saturation-factor, 1)*59.9%), 84.6%);
-	--brand-experiment-230: hsl(305, calc(var(--saturation-factor, 1)*59.9%), 80.1%);
-	--brand-experiment-260: hsl(305, calc(var(--saturation-factor, 1)*59.9%), 75.6%);
-	--brand-experiment-300: hsl(305, calc(var(--saturation-factor, 1)*59.9%), 71.1%);
-	--brand-experiment-330: hsl(305, calc(var(--saturation-factor, 1)*59.9%), 66.6%);
-	--brand-experiment-360: hsl(305, calc(var(--saturation-factor, 1)*59.9%), 62.1%);
-	--brand-experiment-400: hsl(305, calc(var(--saturation-factor, 1)*59.9%), 57.7%);
-	--brand-experiment-430: hsl(305, calc(var(--saturation-factor, 1)*59.9%), 53.2%);
-	--brand-experiment-460: hsl(305, calc(var(--saturation-factor, 1)*59.9%), 48.7%);
-	--brand-experiment-500: hsl(305, calc(var(--saturation-factor, 1)*59.9%), 44.2%);
-	--brand-experiment-530: hsl(305, calc(var(--saturation-factor, 1)*44.9%), 40.8%);
-	--brand-experiment-560: hsl(305, calc(var(--saturation-factor, 1)*35.9%), 37.3%);
-	--brand-experiment-600: hsl(305, calc(var(--saturation-factor, 1)*32.8%), 33.9%);
-	--brand-experiment-630: hsl(305, calc(var(--saturation-factor, 1)*32.8%), 30.5%);
-	--brand-experiment-660: hsl(305, calc(var(--saturation-factor, 1)*32.8%), 27%);
-	--brand-experiment-700: hsl(305, calc(var(--saturation-factor, 1)*32.8%), 23.6%);
-	--brand-experiment-730: hsl(305, calc(var(--saturation-factor, 1)*32.8%), 20.2%);
-	--brand-experiment-760: hsl(305, calc(var(--saturation-factor, 1)*32.8%), 16.7%);
-	--brand-experiment-800: hsl(305, calc(var(--saturation-factor, 1)*32.8%), 13.3%);
-	--brand-experiment-830: hsl(305, calc(var(--saturation-factor, 1)*32.8%), 9.9%);
-	--brand-experiment-860: hsl(305, calc(var(--saturation-factor, 1)*32.8%), 6.4%);
-	--brand-experiment-900: hsl(305, calc(var(--saturation-factor, 1)*32.8%), 3%);
-	--brand-experiment-05a: hsla(305, calc(var(--saturation-factor, 1)*59.9%), 44.2%, 0.05);
-	--brand-experiment-10a: hsla(305, calc(var(--saturation-factor, 1)*59.9%), 44.2%, 0.1);
-	--brand-experiment-15a: hsla(305, calc(var(--saturation-factor, 1)*59.9%), 44.2%, 0.15);
-	--brand-experiment-20a: hsla(305, calc(var(--saturation-factor, 1)*59.9%), 44.2%, 0.2);
-	--brand-experiment-25a: hsla(305, calc(var(--saturation-factor, 1)*59.9%), 44.2%, 0.25);
-	--brand-experiment-30a: hsla(305, calc(var(--saturation-factor, 1)*59.9%), 44.2%, 0.3);
-	--brand-experiment-35a: hsla(305, calc(var(--saturation-factor, 1)*59.9%), 44.2%, 0.35);
-	--brand-experiment-40a: hsla(305, calc(var(--saturation-factor, 1)*59.9%), 44.2%, 0.4);
-	--brand-experiment-45a: hsla(305, calc(var(--saturation-factor, 1)*59.9%), 44.2%, 0.45);
-	--brand-experiment-50a: hsla(305, calc(var(--saturation-factor, 1)*59.9%), 44.2%, 0.5);
-	--brand-experiment-55a: hsla(305, calc(var(--saturation-factor, 1)*59.9%), 44.2%, 0.55);
-	--brand-experiment-60a: hsla(305, calc(var(--saturation-factor, 1)*59.9%), 44.2%, 0.6);
-	--brand-experiment-65a: hsla(305, calc(var(--saturation-factor, 1)*59.9%), 44.2%, 0.65);
-	--brand-experiment-70a: hsla(305, calc(var(--saturation-factor, 1)*59.9%), 44.2%, 0.7);
-	--brand-experiment-75a: hsla(305, calc(var(--saturation-factor, 1)*59.9%), 44.2%, 0.75);
-	--brand-experiment-80a: hsla(305, calc(var(--saturation-factor, 1)*59.9%), 44.2%, 0.8);
-	--brand-experiment-85a: hsla(305, calc(var(--saturation-factor, 1)*59.9%), 44.2%, 0.85);
-	--brand-experiment-90a: hsla(305, calc(var(--saturation-factor, 1)*59.9%), 44.2%, 0.9);
-	--brand-experiment-95a: hsla(305, calc(var(--saturation-factor, 1)*59.9%), 44.2%, 0.95);
+	--brand-experiment: hsl(305, calc(var(--saturation-factor, 1)*1.9%), 22.2%);
+	--brand-experiment-100: hsl(305, calc(var(--saturation-factor, 1)*1.9%), 22%);
+	--brand-experiment-130: hsl(305, calc(var(--saturation-factor, 1)*1.9%), 12.5%);
+	--brand-experiment-160: hsl(305, calc(var(--saturation-factor, 1)*1.9%), 11%);
+	--brand-experiment-200: hsl(305, calc(var(--saturation-factor, 1)*1.9%), 49.6%);
+	--brand-experiment-230: hsl(305, calc(var(--saturation-factor, 1)*1.9%), 50.1%);
+	--brand-experiment-260: hsl(305, calc(var(--saturation-factor, 1)*1.9%), 33.6%);
+	--brand-experiment-300: hsl(305, calc(var(--saturation-factor, 1)*1.9%), 34.1%);
+	--brand-experiment-330: hsl(305, calc(var(--saturation-factor, 1)*1.9%), 23.6%);
+	--brand-experiment-360: hsl(305, calc(var(--saturation-factor, 1)*1.9%), 23.1%);
+	--brand-experiment-400: hsl(305, calc(var(--saturation-factor, 1)*1.9%), 11.7%);
+	--brand-experiment-430: hsl(305, calc(var(--saturation-factor, 1)*1.9%), 11.2%);
+	--brand-experiment-460: hsl(305, calc(var(--saturation-factor, 1)*1.9%), 38.7%);
+	--brand-experiment-500: hsl(305, calc(var(--saturation-factor, 1)*1.9%), 44.2%);
+	--brand-experiment-530: hsl(305, calc(var(--saturation-factor, 1)*1.9%), 40.8%);
+	--brand-experiment-560: hsl(305, calc(var(--saturation-factor, 1)*0.9%), 37.3%);
+	--brand-experiment-600: hsl(305, calc(var(--saturation-factor, 1)*0.8%), 33.9%);
+	--brand-experiment-630: hsl(305, calc(var(--saturation-factor, 1)*0.8%), 30.5%);
+	--brand-experiment-660: hsl(305, calc(var(--saturation-factor, 1)*0.8%), 27%);
+	--brand-experiment-700: hsl(305, calc(var(--saturation-factor, 1)*0.8%), 23.6%);
+	--brand-experiment-730: hsl(305, calc(var(--saturation-factor, 1)*0.8%), 20.2%);
+	--brand-experiment-760: hsl(305, calc(var(--saturation-factor, 1)*0.8%), 16.7%);
+	--brand-experiment-800: hsl(305, calc(var(--saturation-factor, 1)*0.8%), 13.3%);
+	--brand-experiment-830: hsl(305, calc(var(--saturation-factor, 1)*0.8%), 9.9%);
+	--brand-experiment-860: hsl(305, calc(var(--saturation-factor, 1)*0.8%), 6.4%);
+	--brand-experiment-900: hsl(305, calc(var(--saturation-factor, 1)*0.8%), 3%);
+	--brand-experiment-05a: hsla(305, calc(var(--saturation-factor, 1)*1.9%), 44.2%, 0.05);
+	--brand-experiment-10a: hsla(305, calc(var(--saturation-factor, 1)*1.9%), 44.2%, 0.1);
+	--brand-experiment-15a: hsla(305, calc(var(--saturation-factor, 1)*1.9%), 44.2%, 0.15);
+	--brand-experiment-20a: hsla(305, calc(var(--saturation-factor, 1)*1.9%), 44.2%, 0.2);
+	--brand-experiment-25a: hsla(305, calc(var(--saturation-factor, 1)*1.9%), 44.2%, 0.25);
+	--brand-experiment-30a: hsla(305, calc(var(--saturation-factor, 1)*1.9%), 44.2%, 0.3);
+	--brand-experiment-35a: hsla(305, calc(var(--saturation-factor, 1)*1.9%), 44.2%, 0.35);
+	--brand-experiment-40a: hsla(305, calc(var(--saturation-factor, 1)*1.9%), 44.2%, 0.4);
+	--brand-experiment-45a: hsla(305, calc(var(--saturation-factor, 1)*1.9%), 44.2%, 0.45);
+	--brand-experiment-50a: hsla(305, calc(var(--saturation-factor, 1)*1.9%), 44.2%, 0.5);
+	--brand-experiment-55a: hsla(305, calc(var(--saturation-factor, 1)*1.9%), 44.2%, 0.55);
+	--brand-experiment-60a: hsla(305, calc(var(--saturation-factor, 1)*1.9%), 44.2%, 0.6);
+	--brand-experiment-65a: hsla(305, calc(var(--saturation-factor, 1)*1.9%), 44.2%, 0.65);
+	--brand-experiment-70a: hsla(305, calc(var(--saturation-factor, 1)*1.9%), 44.2%, 0.7);
+	--brand-experiment-75a: hsla(305, calc(var(--saturation-factor, 1)*1.9%), 44.2%, 0.75);
+	--brand-experiment-80a: hsla(305, calc(var(--saturation-factor, 1)*1.9%), 44.2%, 0.8);
+	--brand-experiment-85a: hsla(305, calc(var(--saturation-factor, 1)*1.9%), 44.2%, 0.85);
+	--brand-experiment-90a: hsla(305, calc(var(--saturation-factor, 1)*1.9%), 44.2%, 0.9);
+	--brand-experiment-95a: hsla(305, calc(var(--saturation-factor, 1)*1.9%), 44.2%, 0.95);
 }
 
 /*
@@ -207,7 +207,7 @@ $$  /   \$$ |$$ |  $$ |   $$ |   $$$$$$$$\ $$ |  $$ |$$ | \_/ $$ |$$ |  $$ |$$ |
 \__/     \__|\__|  \__|   \__|   \________|\__|  \__|\__|     \__|\__|  \__|\__|  \__|\__|  \__|
 */
 div[class*="typeWindows-"]::after {
-  content: 'Discord dead inside';
+  content: 'dead inside';
   font-weight: bold;
   font-size: 14px;
   line-height: 30px;
@@ -587,7 +587,7 @@ Titlebar top buttons colors. Close, rezise and hide*/
 
 /*Custom background for home icon and for guilds with no photos*/
 .childWrapper-1j_1ub {
-  background: linear-gradient(rgba(170, 0, 158, 0.4),rgba(170, 0, 158, 0.3)) , var(--loop-gif-diamond) 50% 100%/cover !important;
+  background: linear-gradient(rgba(99, 99, 99, 0.4),rgba(99, 99, 99, 0.4)) , var(--loop-gif-diamond) 50% 100%/cover !important;
   color: var(--text-normal);
 }
 
